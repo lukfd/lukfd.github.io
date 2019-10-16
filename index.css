@@ -98,7 +98,8 @@ font-family: 'lobster', cursive;
 	text-align: center;
 	font-size: 10vw;
 	font-family: 'lobster', cursive;
-	color: #3346d6;
+	color: black;
+	background-color: rgba(58, 100, 207,0.5);
 }
 
 #secondtop {
