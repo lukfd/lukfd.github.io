@@ -30,7 +30,6 @@
 
 	<div class="container">
 		<!-- HEADER PAGE -->
-
 		<div class="row">
 			<div class="twelve columns header">
 				
@@ -41,38 +40,179 @@
 				<h1 class="u-pull-left">Crime in St. Paul</h1>
 			</div>
 		</div>
-
-		<!-- BODY PAGE -->
-		<div id="app"> <!-- Vue -->
-			<div class="row">
+		<div>
+			<div class="row" style="text-align: center">
 				<div class="twelve columns">
-					<label>Search Crimes in St. Paul</label>
-					<input type="text" name="search" class="searchbox" height="50" placeholder="Type a location">
-				</div>
-				<div class="twelve columns">
-					<div id="mapid"></div>
+					<h1 style="margin-top: 20px">Search crimes</h1>
 				</div>
 			</div>
 		</div>
+		<!-- BODY PAGE -->
+		<div id="app"> 
+			<div class="row">
+				<div class="three columns">
+					<label class="samefont">Search Crimes in St. Paul by</label>
+					<select id="type" v-model="searchType" class="selectBox" @change="changeAddressDiv">
+			            <option v-for="option in searchTypeOptions" :value="option.value">{{ option.text }}</option>
+			        </select>
+				</div>
+
+				<div v-if="!addressDiv">
+					<div class="three columns">
+						<div style="height: 29px"></div>
+						<!-- SEARCH BOX LAT-->
+						<input type="text" name="box" height="50" class="searchbox2" v-model="userLat" placeholder="Type a latitude" v-on:keyup.enter="Search">
+					</div>
+					<div class="three columns">
+						<div style="height: 29px"></div>
+						<!-- SEARCH BOX LNG-->
+						<input type="text" name="box" height="50" class="searchbox" v-model="userLng" placeholder="Type a longitude" v-on:keyup.enter="Search">
+					</div>				
+				</div>
+
+				<div class="six columns" v-else>
+					<div style="height: 29px"></div>
+					<!-- SEARCH BOX ADDRESS-->
+					<input type="text" height="50" name="box" class="searchbox" v-model="inputSearch" placeholder="Type a location" v-on:keyup.enter="Search">
+				</div>
+				<div class="two columns u-pull-right">
+					<div style="height: 29px"></div>
+					<button style="height: 50px" type="button" @click="Search">Enter</button>
+				</div>		
+			</div>
+
+
+			<div class="row">
+				<div class="twelve columns">
+					<div style="margin-top: 40px"></div>
+					<div id="mapid"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<dir class="twelve columns" style="padding: 0 0; margin: 0">
+					<div class="checkbox">
+						<input type="checkbox" value="110" v-model="crimeSelected"> Murder 
+						<input type="checkbox" value="210" v-model="crimeSelected"> Rape 
+						<input type="checkbox" value="311" v-model="crimeSelected"> Robbery 
+						<input type="checkbox" value="400" v-model="crimeSelected"> Aggravated Assault 
+						<input type="checkbox" value="500" v-model="crimeSelected"> Burglary 
+						<input type="checkbox" value="600" v-model="crimeSelected"> Theft 
+						<input type="checkbox" value="810" v-model="crimeSelected"> Assoult
+						<input type="checkbox" value="900" v-model="crimeSelected"> Arson 
+						<input type="checkbox" value="1400" v-model="crimeSelected"> Damage 
+						<input type="checkbox" value="1401" v-model="crimeSelected"> Graffiti 
+						<input type="checkbox" value="1800" v-model="crimeSelected"> Narcotics 
+						<input type="checkbox" value="2619" v-model="crimeSelected"> Weapons 
+						<input type="checkbox" value="9954" v-model="crimeSelected"> Police Visit 
+						<input type="checkbox" value="9959" v-model="crimeSelected"> Community Event 
+					</div>
+				</dir>
+			</div>
+			<div class="row">
+				<dir class="twelve columns" style="padding: 0 0; margin: 0">
+					<div class="checkbox">
+						<input type="checkbox" value="1" v-model="neighSelected"> Conway/Battlecreek/Highwood 
+						<input type="checkbox" value="2" v-model="neighSelected"> Greater East Side 
+						<input type="checkbox" value="3" v-model="neighSelected"> West Side 
+						<input type="checkbox" value="4" v-model="neighSelected"> Dayton's Bluff 
+						<input type="checkbox" value="5" v-model="neighSelected"> Payne/Phalen 
+						<input type="checkbox" value="6" v-model="neighSelected"> North End 
+						<input type="checkbox" value="7" v-model="neighSelected"> Thomas/Dale(Frogtown) 
+						<input type="checkbox" value="8" v-model="neighSelected"> Summit/University 
+						<input type="checkbox" value="9" v-model="neighSelected"> West Seventh 
+						<input type="checkbox" value="10" v-model="neighSelected"> Como 
+						<input type="checkbox" value="11" v-model="neighSelected"> Hamline/Midway 
+						<input type="checkbox" value="12" v-model="neighSelected"> St. Anthony 
+						<input type="checkbox" value="13" v-model="neighSelected"> Union Park 
+						<input type="checkbox" value="14" v-model="neighSelected"> Macalester-Groveland 
+						<input type="checkbox" value="15" v-model="neighSelected"> Highland 
+						<input type="checkbox" value="16" v-model="neighSelected"> Summit Hill
+						<input type="checkbox" value="17" v-model="neighSelected"> Capitol River
+					</div>
+				</dir>
+			</div>
+			<div class="row">
+				<div class="three columns" style="{color: grey} :hover{color: black}">
+					<label class="samefont">From date</label>
+					<input type="date" max="2019-10-31" height="5" name="box" v-model="searchStartDate" v-on:keyup.enter="SearchUpper">
+				</div>
+				<div class="three columns">
+					<label class="samefont">To date</label>
+					<input type="date" max="2019-10-31" height="5" name="box" v-model="searchEndDate" v-on:keyup.enter="SearchUpper">
+				</div>
+				<div class="four columns">
+					<label class="samefont">Search by time</label>
+					<input type="time" height="5" name="box" v-model="searchTime" step="1" v-on:keyup.enter="SearchTime" autocomplete="on">
+				</div>
+				<div class="two columns"><button type="button" @click="SearchUpper" id="buttonUpper"> SUBMIT </button></div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<h5 class="samefont" style="text-align: center; margin:0">Search Result</h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<!-- SEARCH TABLE -->
+					<table style="width:100%; font-size: 12px">
+					  <thead>
+					    <th>Date</th>
+					    <th>Time</th>
+					    <th>Block</th>
+					    <th>Incident Type</th>
+					    <th>Incident</th>
+					    <th>Neighborhoods</th>
+					    <th>Police Grid</th>
+					  </thead>
+					  <tbody v-for="crime in stpaulcrimes" v-for="neighbor in Neighborhoods" v-for="code in Codes">
+						<tr v-if="crime.color==='#d9d366'" bgcolor='#d9d366' v-on:click="Visualize($event, crime.block, crime.date, crime.time, crime.incident)" id="tableCrime">
+                            <td>{{crime.date}}</td>
+                            <td>{{crime.time}}</td>
+                            <td>{{crime.block}}</td>
+                            <td>{{Codes['C'+crime.code]}}</td>
+                            <td>{{crime.incident}}</td>
+                            <td>{{Neighborhoods['N'+crime.neighborhood_number]}}</td>
+                            <td>{{crime.police_grid}}</td>
+						</tr>
+                        <tr v-if="crime.color==='#d6a7a7'" bgcolor='#d6a7a7' v-on:click="Visualize($event, crime.block, crime.date, crime.time, crime.incident)" id="tableCrime">
+                            <td>{{crime.date}}</td>
+                            <td>{{crime.time}}</td>
+                            <td>{{crime.block}}</td>
+                            <td>{{Codes['C'+crime.code]}}</td>
+                            <td>{{crime.incident}}</td>
+                            <td>{{Neighborhoods['N'+crime.neighborhood_number]}}</td>
+                            <td>{{crime.police_grid}}</td>
+						</tr>
+                        <tr v-if="crime.color==='#66a9d9'" bgcolor='#66a9d9' v-on:click="Visualize($event, crime.block, crime.date, crime.time, crime.incident)" id="tableCrime">
+                            <td>{{crime.date}}</td>
+                            <td>{{crime.time}}</td>
+                            <td>{{crime.block}}</td>
+                            <td>{{Codes['C'+crime.code]}}</td>
+                            <td>{{crime.incident}}</td>
+                            <td>{{Neighborhoods['N'+crime.neighborhood_number]}}</td>
+                            <td>{{crime.police_grid}}</td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>				
+			</div>
+		
+		</div>
 		<!-- FOOTER PAGE -->
 		<div class="row">
-			<div class="twelve columns footer">
-				<p style="text-align: center">For CISC 375</p>
+			<div class="three columns footer">
+				<div style="background-color: red; height: 50px; width: 50px; display: inline-block"></div><p>Violent Crimes</p>
 			</div>
-		</div>		
+			<div class="three columns">
+				<div style="background-color: green; height: 50px; width: 50px; display: inline-block"></div><p>Property Crimes</p>
+			</div>
+			<div class="three columns">
+				<div style="background-color: blue; height: 50px; width: 50px; display: inline-block"></div><p>Other Crimes</p>
+			</div>
+		</div>
+
 	</div>
-
-	<script type="text/javascript">
-		var mymap = L.map('mapid');
-		mymap.setView([51.505, -0.09], 13);
-		L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={sk.eyJ1IjoibHVrZmQiLCJhIjoiY2szdGJlcWIxMDE0azNsbno5cHcwZGticSJ9.1OU7HfL9IXMqbZ3F8NbQ1w}', {
-		    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		    maxZoom: 18,
-		    id: 'mapbox/streets-v11',
-		    accessToken: 'sk.eyJ1IjoibHVrZmQiLCJhIjoiY2szdGJlcWIxMDE0azNsbno5cHcwZGticSJ9.1OU7HfL9IXMqbZ3F8NbQ1w'
-		}).addTo(mymap);
-
-	</script>
 
 </body>
 </html>
