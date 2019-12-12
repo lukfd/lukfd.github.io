@@ -4,9 +4,20 @@
 	font-family: 'Contrail One', cursive;
 }
 
+.samefont {
+	font-family: 'Contrail One', cursive;
+}
+
 a {
 	color: black;
 	text-decoration: none;
+}
+
+table {
+	display: block;
+    height: 200px;
+    overflow: scroll;
+    /*overflow-y: scroll*/
 }
 
 .header {
@@ -15,7 +26,7 @@ a {
 }
 
 .footer {
-	position: fixed;
+	position: relative;
 	bottom: 0;
 }
 
@@ -25,8 +36,21 @@ a {
 	margin: 0;
 }
 
+.buttonTop {
+	height: 15rem;
+	font-size: 2rem;
+	display: block;
+	margin: 0 auto;
+}
+
 .searchbox {
 	min-width: 100%;
+	padding: 20px 10px;
+	line-height: 40px
+}
+
+.searchbox2 {
+	min-width: 0.1em;
 	padding: 20px 10px;
 	line-height: 40px
 }
@@ -37,8 +61,48 @@ input[type="text"]{
 	font-size: 24px;
 }
 
+.selectBox{
+	height: 50px;
+}
+
+.checkbox {
+	border-style: solid;
+	border-width: 1px;
+	padding-left: 5px;
+	color: grey;
+}
+
+.checkbox:hover {
+	color: black;
+}
+
+#buttonUpper {
+	margin: 0;
+	margin-top: 15px;
+	text-align: center;
+	background-color: #fcba03;
+}
+
 /*CSS FOR MAP*/
 
 #mapid {
-	height: 180px; 
+	height: 40em; 
 }
+
+/* ON TABLE*/
+
+#tableCrime:hover {
+	cursor: grab;
+}
+
+#tableCrime td:hover{
+	background-color: rgba(252, 3, 82,0.5);
+}
+
+/*ABOUT PAGE*/
+
+.logos {
+	max-width: 250px;
+    height:auto;
+}
+
