@@ -1,0 +1,40 @@
+.sections {
+	height: 100vh;
+}
+
+.samecolor {
+	color: #223D94;
+}
+
+/*TOP*/
+.topbar {
+	top: 0;
+	z-index: 1;
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	background-color: #F5D236;
+}
+
+.topbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.topbar li {
+  float: left;
+}
+
+.topbar li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.under {
+	align-content: center;
+}
