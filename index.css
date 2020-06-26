@@ -199,7 +199,9 @@ font-family: 'lobster', cursive;
 	padding-bottom: 20px;
 }
 
-
+.inline {
+	display: inline;
+}
 
 
 
