@@ -203,6 +203,21 @@ font-family: 'lobster', cursive;
 	display: inline;
 }
 
+#mainProjects {
+    text-align: center;
+    width: 100%;
+}
 
+.button-link {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+	line-height: 25px;
+	width: 3em;
+	height: auto;
+	background-color: #78E3FD;
+	text-decoration: none;
+}
 
 
