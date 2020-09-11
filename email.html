@@ -1,0 +1,597 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+    <title>UST Computer Science Club's newsletter</title>
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      
+      /*All the styling goes here*/
+      
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; 
+      }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; 
+      }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; 
+      }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; 
+      }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: 580px; 
+      }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; 
+      }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%; 
+      }
+
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; 
+      }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .footer {
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%; 
+      }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; 
+      }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: 'Roboto Slab', Georgia, serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 30px; 
+      }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; 
+      }
+
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; 
+      }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; 
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: underline; 
+      }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; 
+      }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; 
+      }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; 
+      }
+
+      .btn-primary table td {
+        background-color: #3498db; 
+      }
+
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; 
+      }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; 
+      }
+
+      .first {
+        margin-top: 0; 
+      }
+
+      .align-center {
+        text-align: center; 
+      }
+
+      .align-right {
+        text-align: right; 
+      }
+
+      .align-left {
+        text-align: left; 
+      }
+
+      .clear {
+        clear: both; 
+      }
+
+      .mt0 {
+        margin-top: 0; 
+      }
+
+      .mb0 {
+        margin-bottom: 0; 
+      }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; 
+      }
+
+      .powered-by a {
+        text-decoration: none; 
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; 
+      }
+
+      .img-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .img-full-width {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+      }
+
+      /* -------------------------------------
+          PERSONALIZED CLASSES
+      ------------------------------------- */
+      .article-title {
+        font-weight: bolder;
+        margin: 0 0;
+      }
+
+      .under-title {
+        margin: 0.5em 0; 
+        font-size: smaller;
+      }
+
+      .social-icons {
+        height: 3rem; 
+        width: auto;
+        display: inline-block;
+      }
+
+      hr.new {
+        border-top: 0.01rem solid grey;
+        margin: 0 0;
+        border: 0 0;
+      }
+
+      .btn-me {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; 
+        padding: 1em 1em;
+        border-radius: 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .date-event {
+        text-align: left;
+        display: inline;
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; 
+        }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; 
+        }
+        table[class=body] .title {
+          padding: 0px !important; 
+        }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; 
+        }
+        table[class=body] .content {
+          padding: 0 !important; 
+        }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; 
+        }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; 
+        }
+        table[class=body] .btn table {
+          width: 100% !important; 
+        }
+        table[class=body] .btn a {
+          width: 100% !important; 
+        }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+
+    </style>
+  </head>
+  <body class="">
+    <span class="preheader">Computer Science club newsletter</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+              <!-- HEADER -->
+              <tr>
+                <td class="title">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <img src="https://i.postimg.cc/B6v6LGWs/Risorsa-2.png" 
+                          alt="Tommy Script title"
+                          class="img-responsive img-center img-full-width">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- SOCIAL -->
+              <tr>
+                <td class="title">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td class="align-center">
+                        <p class="under-title">9/9/20 - Number 0 - Computer Science Club's weekly newsletter</p>
+                        <a href="https://discord.gg/H2xfNe"><img class="social-icons" src="https://image.flaticon.com/icons/svg/2111/2111363.svg" alt="discord"></a>
+                        <a href="https://twitter.com/ustcsclub"><img class="social-icons" src="https://image.flaticon.com/icons/svg/733/733635.svg" alt="twitter"></a>
+                        <a href="https://www.instagram.com/ustcsclub/"><img class="social-icons" src="https://image.flaticon.com/icons/svg/733/733614.svg" alt="instagram"></a>
+                        <hr class="new">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- START MAIN CONTENT AREA -->
+              <!--  -->
+              <tr>
+                <td class="wrapper">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr class="align-center">
+                      <td>
+                        <p>Be part of the Club! <a href="https://stthomas.campuslabs.com/engage/organization/computerscience" class="btn-me">Sign Up</a> </p>
+                        <hr class="new">
+                      </td>
+                    </tr>
+                    <tr class="align-center">
+                      <td>
+                        <h1>From UST</h1>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="article-title">Life at UST during Fall 2020</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6DL_ZmerMqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Our student leaders have put together a short video to describe life on campus this fall. Watch <a href="https://www.youtube.com/watch?v=6DL_ZmerMqQ&feature=youtu.be">"Life with Sully"</a> and see how students are committing to wearing face coverings, sanitizing and social distancing.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="article-title">Books and Course material for Fall 2020</h2>
+                        <img src="https://i.ibb.co/3z16j9c/54c6fa2790e9597aab2729aea4299e96bb96e8d2.png" alt="bookstore">
+                        <p>Campus Store is starting to open textbook and course material reservation from August 3rd. Now students can make curbside pickup, reservation room, pick up from the campus store or ship via FedEx. Check you booklist <a href="http://tommiebooks.stthomas.edu/tommiebooks1/selecttermdept">HERE</a></p>
+                        <hr class="new">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="article-title">MN Private Colleges Fall Fair</h2>
+                        <img src="https://www.stthomas.edu/media/careerdevelopment/job-fair-images/170222mrb154_0131.jpg" alt="" class="img-full-width">
+                        <p>By attending this virtual recruiting fair, candidates will have the opportunity to network with Minnesota, regional, and national companies hiring in the areas of consulting, banking/finance, actuarial science, stats/data science, technology, business analysis, management and leadership training/development, and project management. We welcome sophomores, juniors, seniors and May/Summer 2020 undergraduate alumni from all majors to register for the fair.</p>
+                        For more information <a href="https://www.stthomas.edu/careerdevelopment/services/jobfairs/fallfair/">visit the Career Center</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <!-- Title -->
+                    <tr class="align-center">
+                      <td>
+                        <h1>From the World</h1>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="article-title">Code snippets for learning how to code</h2>
+                        <img src="https://i.ibb.co/z8gJZ6f/Capture.png" alt="" class="img-full-width">
+                        <p><a href="https://www.30secondsofcode.org/">30secondsofcode.org</a> offers you code snippets so that you can learn more function and pick up new languages quickly. You can also search specific coding question for a particular language. They don't have Java, I know :'(</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="article-title">Summer Internship Resource</h2>
+                        <p>Check this github page with a list of some bigger companies that will offer Summer 2021 Internship <a href="https://github.com/Pitt-CSC/Summer2021-Internships">Link here</a></p>
+                        <p>We will have this semster some companies and alumni as guest to talk about how to apply for summer internship application.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <!-- Title -->
+                    <tr class="align-center">
+                      <td>
+                        <hr class="new">
+                        <h1 style="color: #510c76">From CS Club</h1>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="article-title">Thanks and Welcome to everyone</h2>
+                        <p>In our first Tommy Script, the Computer Science Club wants to <b> thank the CS Club 2019/20 eboard Mitchell, Tyler and Tim</b>. We also want to welcome all the tommies and wish you the best for a great new academic year. This newsletter wants to be a way of sharing news from our University, share news from the world of Computer Science and most importantly keep our CS club member up to date 
+                          for new events that we will run during our semester.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="article-title">Participate!</h2>
+                        <p>We want to make sure you can participate activly into our club. If you <b>want to write an article for Tommy Script</b> contact us. If you have some projects or announcement that you wish to share let us know. Now we are on <a href="https://www.instagram.com/ustcsclub/">instagram</a> and <a href="https://discord.gg/H2xfNe">discord</a>.</p>
+                        <p>We want to hear from you! leave a suggestion to the following google form</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 20px;">
+                        <a href="https://forms.gle/Hs4eHSQpPTVnfdXo7" class="btn-me">leave your feedback!</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="article-title">Make your friend become a member of CS Club!</h2>
+                        <p>From fall 2020, students can join our fantastic club and become a member directly through Tommy Link! Please click this <a href="https://stthomas.campuslabs.com/engage/organization/computerscience"> LINK </a>  and share it with your friends so that can sign up to the CS Club! We appriciate!</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h1 class="article-title">JOIN OUR PROJECTS</h1>
+                        <h2 class="article-title">Pathway to industry</h2>
+                        <p> <b>PATHWAY TO INDUSTRY</b> is a new learning program will guide student to learn Cloud Computing and other 
+                          Software Development skills during Fall while preparing to develop software in the Spring/Summer 2021.</p>
+                        <p>if interested in joining Pathway to industry program, please <a href="https://t.co/SB2KbtqNGS?amp=1">sign up here</a> </p>
+                        <h2 class="article-title">Build Web Application</h2>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <hr class="new">
+                        <h1 class="article-title">UPCOMING MEETING</h1>
+                        <p><h1 class="date-event">9/15</h1> <h3 class="date-event">| 12 - 1 pm | in-person outdoor meeting @John P. Monahan Plaza (infront ASC) </h3> Meet us outside while maintaining social distance!</p>
+                        <p><h1 class="date-event">9/22</h1> <h3 class="date-event">| 12 - 1 pm | Virtual Meeting: "Intro to Pathway to Industry"</h3> we will present this new coding 2020 program, designed by Francis a student from Macalester, which will guide student to learn Cloud Computing and other Software Development skills during Fall while preparing to develop software in the Spring/Summer 2021.</p>
+                        <p><h1 class="date-event">9/22</h1> <h3 class="date-event">| 12 - 1 pm | Virtual Meeting: "Activity Fair Fall 2020"</h3> The E-board will be at the 2020 club fair to introducing CS Club to new students and share our Club program.</p>
+                        <p><h1 class="date-event">9/29</h1> <h3 class="date-event">| 12 - 1 pm | Virtual Meeting: "CHS - Company's summer 2021 internships presentation"</h3>CHS is a global agribusiness owned by farmers, ranchers and cooperatives across the United States. Diversified in energy, agronomy, grains and foods, we're committed to creating connections to empower agriculture.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <br> Join us in the writing of Tommy Script newsletter. <a href="mailto:csclub@stthomas.edu">contact us!</a>.
+                    <br> Follow CS Club on social media!
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://discord.gg/H2xfNe"><img class="social-icons" src="https://image.flaticon.com/icons/svg/2111/2111363.svg" alt="discord"></a>
+                    <a href="https://twitter.com/ustcsclub"><img class="social-icons" src="https://image.flaticon.com/icons/svg/733/733635.svg" alt="twitter"></a>
+                    <a href="https://www.instagram.com/ustcsclub/"><img class="social-icons" src="https://image.flaticon.com/icons/svg/733/733614.svg" alt="instagram"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block">
+                    <br> image header Courtesy of the University of St. Thomas Archives
+                    <br> Powered by UST Computer Science Club e-board.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
