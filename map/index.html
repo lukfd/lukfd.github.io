@@ -22,9 +22,6 @@
     crossorigin=""></script>
     <!-- Import ArcGis -->
     <script src="https://js.arcgis.com/4.16/"></script>
-
-    <!-- Reading data -->
-    <script type="text/javascript" src="./organizations.json"></script>
     <!-- Internal Script -->
     <script src="./script.js"></script>
   </head>
@@ -34,6 +31,7 @@
     <!-- search bar -->
     <div id="app">
       <form id="search">
+        <!-- where user input text -->
         <input 
           class="search-bar"
           type="text" 
@@ -44,6 +42,7 @@
         <button class="button-bar" type="button" v-on:click="Search">Enter</button>
       </form>
       <form id="checkbox">
+        <!-- user can select SingleFaith and other two options -->
         <input type="checkbox" value="sfc" v-model="searchTypeOptions" v-on:change="Filter">
         <label for="vehicle1"> single faith community </label>
         <input type="checkbox" value="sfo" v-model="searchTypeOptions" v-on:change="Filter">
