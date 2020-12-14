@@ -211,12 +211,14 @@ font-family: 'lobster', cursive;
 .button-link {
     padding: 10px;
     text-align: center;
-    border-radius: 5px;
+	border-radius: 5px;
+	border: solid rgba(92, 127, 214, 0.5) 0.2px;
     color: black;
 	line-height: 25px;
 	width: 3em;
 	height: auto;
 	background-color: #78E3FD;
+	box-shadow: 0 0 10px 0 rgba(58, 100, 207,0.5);
 	text-decoration: none;
 }
 
