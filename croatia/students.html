@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- THIS IS A TEMPLATE TO CREATE A NEW PAGE -->
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="University of St. Thomas">
+
+  <title></title>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap' carousel -->
+  <script>
+    $('.carousel').carousel({
+      touch: true
+    })
+  </script>
+
+  <style>
+    .carousel {
+      height:70vh;
+      width:100%;
+    }
+
+    .img-car {
+      max-height: 70vh; 
+      min-height: 70vh;
+      object-fit: cover;
+
+      filter: brightness(0.7);
+    }
+
+    .move-up {
+      object-position: 50% 20%;
+    }
+
+    .title-car {
+      z-index: 2;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="./index.html">
+        <img src="./images/ust-logo.png" alt="" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse my-3" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" id="headers-font">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./excavation.html">Excavation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./students.html">Students Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./experience.html">Student Experience</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/header_original.jpg" class="d-block w-100 img-car" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/from_plane_header.jpg" class="d-block w-100 img-car" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/city_header.jpg" class="d-block w-100 img-car" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/drone small_header.jpg" class="d-block w-100 img-car move-up" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Photos/2015 photos/ 2015 Andrew, Caitlin.JPG" class="img-car move-up d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Photos/2016 photos/Excavation 2016.jpg" class="d-block w-100 img-car move-up" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Soline_site panoramic.JPG" class="d-block w-100 img-car move-up" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="text-center title-car w-100">
+          <h1 style="font-size: 48px; color: white; text-shadow: 2px 2px 2px #9e28b5;">University of St. Thomas</h1>
+          <h3 style="font-size: 24px; color: white; text-shadow: 2px 2px 2px #9e28b5;">Interdisciplinary Student Research in Croatia</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+  <!-- Intro -->
+  <section id="excavations">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 id="headers-font">Students' Research</h2>
+          <p class="lead">
+            From 2008 St. Thomas' students have documented their work at the 
+            arecheological site. Students have made posters and wrote paperes on their research.
+            Here we have collected all the students' research papers and more. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thumbnails -->
+  <section class="bg-light">
+    <div class="container">
+      <!-- First -->
+      <div class="row pb-3">
+        <div class="media">
+          <img src="./student_projects/projects_thumbnails/salt.jpg" class="mr-3" style="height: 200px; width: 200px;">
+          <div class="media-body">
+            <!-- Button trigger modal -->
+            
+            <!-- MODAL -->
+            <a data-toggle="modal" data-target="#file1" class="file-pre-link">
+              <h5 class="mt-0">Environmental Impacts and Engineering Responses: Roman Ports and Salt Works</h5>
+            </a>
+            <p>Type of file: Document and Presentation</p>
+            <p class="lead">Elizabeth Kaiser, University of St. Thomas, St. Paul, Minnesota</p>
+            <p>
+              <span style="display: inline;">year: 2020;</span> 
+              <span style="color: #a97cca;cursor: pointer;text-decoration: underline;"><a data-toggle="modal" data-target="#file1">View file</a></span>
+            </p>
+            
+            <!-- ABSTRACT -->
+            <p>
+              <a class="btn btn-link" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Read abstract
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body">
+                Sea installations during ancient times were important to the economy of the civilization that had them. Some installations, such as ports and harbors, were imperative for trading with other societies as well as bringing goods from distant lands across the sea. Other installations, like fishponds and salt works, were important for food production and preservation. The ancient Roman civilization had an abundance of ports and salt works at their disposal. This research will be examining the engineering response to the maintenance of these sea installations that depended on the environmental stability. Some of instabilities the Romans were battling was silting, or the accumulation of debris in harbors and rivers, as well as the rising of the sea level which especially affected salt works. This research also looks at who were the main benefactors of the upkeep of the installations and who performed it, and finally the reasons behind the end of maintenance and condition of the sites today. The majority of the research is examining the era of the Romans with some medieval and modern examples to understand how ancient history has impacted the modern world. Research today has shown that ancient ports such as Ostia and Portus in Italy, have battled silting through most of their operational period. There has also been evidence for flooding of salt works due to rising sea level, an example of this is in a Roman Villa in Soline Bay in Croatia.
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="file1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="max-width: 80%; height: 80%;" role="document">
+                <div class="modal-content" style="height: 100%;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- FILE !!!!  -->
+                    <h4>Paper</h4>
+                    <object class="obj-size" data="./student_projects/2020 Kaiser Environmental Impacts and Engineering Responses.pdf" type="application/pdf">
+                      <embed class="emb-size" src="./student_projects/2020 Kaiser Environmental Impacts and Engineering Responses.pdf" type="application/pdf" />
+                    </object>
+                    <h4>Presentation</h4>
+                    <object class="obj-size" data="./student_projects/2020 Kaiser_Poster_Environmental Impacts and Engineering Response.pdf" type="application/pdf">
+                      <embed class="emb-size" src="./student_projects/2020 Kaiser_Poster_Environmental Impacts and Engineering Response.pdf" type="application/pdf" />
+                    </object>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form method="get" action="./student_projects/2020 Kaiser Environmental Impacts and Engineering Responses.pdf">
+                      <button type="submit" class="btn btn-primary">Download File</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row py-3">
+        <div class="media">
+          <img src="./student_projects/projects_thumbnails/paintings.jpg" class="mr-3" style="height: 200px; width: 200px;">
+          <div class="media-body">
+            <a data-toggle="modal" data-target="#file3"  class="file-pre-link">
+              <h5 class="mt-0">Painting on the Periphery: Roman Wall Painting Analysis at St. Clement, Croatia</h5>
+            </a>
+            <p>Type of file: Document and Presentation</p>
+            <p class="lead">By: Madeline Olson, University of St. Thomas, St. Paul, Minnesota</p>
+            <p>
+              <span>year: 2019;</span>
+              <span style="color: #a97cca;cursor: pointer;text-decoration: underline;"><a data-toggle="modal" data-target="#file3">View file</a></span>
+            </p>
+            <!-- ABSTRACT -->
+            <p>
+              <a class="btn btn-link" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Read abstract
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                This study investigates and considers the history of the pigments used in wall paintings in the Roman villa on St. Clement, Croatia. Information about the rural Roman Empire and Dalmatia from the first to sixth century CE shows how St. Clement fits into the larger picture. This research project was completed as a part of the University of St. Thomas Young Scholars Grant program. The main subjects of my analysis are wall paintings found at the Soline Bay villa site. All ancient art is a product of the time period and expresses a story about the era and makers. The wall paintings express a story about the rural villas in the Roman era which is why it is vital to consider the archaeological context. The goals of this research were to expand the knowledge about rural Roman villas in provinces and enrich the understanding of pigments used at this time. This paper will cover historical, field, and scientific research conducted surrounding this topic. The historical portion of the paper includes the history of the Soline Bay villa site, rural Roman life in Dalmatia, wall paintings, and X-ray fluorescence (XRF) technology. The field research was conducted on the island of St. Clement, Croatia. The scientific research was conducted at and courtesy of the University of St. Thomas using pXRF technology to create an elemental profile. I also looked at the stylistic and artistic composition of wall painting pigments from the Soline Bay site. I had the wonderful opportunity to take part in the Croatian-American collaborative and multi-disciplinary investigations in St. Clement. The historical and field research provide the background information that is key to understanding the results of my scientific research.
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="file3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="max-width: 80%; height: 80%;" role="document">
+                <div class="modal-content" style="height: 100%;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- FILE !!!!  -->
+                    <h4>Paper</h4>
+                    <object class="obj-size" data="./student_projects/2019 Olson-Madeline-WP Young Scholars Research Paper.pdf" type="application/pdf">
+                      <embed class="emb-size" src="./student_projects/2019 Olson-Madeline-WP Young Scholars Research Paper.pdf" type="application/pdf" />
+                    </object>
+                    <h4>Presentation</h4>
+                    <object class="obj-size" data="./student_projects/2019 Olson-Madeline-WP-Summer 2019 Research Poster.pdf" type="application/pdf">
+                      <embed class="emb-size" src="./student_projects/2019 Olson-Madeline-WP-Summer 2019 Research Poster.pdf" type="application/pdf" />
+                    </object>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form method="get" action="./student_projects/2019 Olson-Madeline-WP Young Scholars Research Paper.pdf">
+                      <button type="submit" class="btn btn-primary">Download File</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row py-3">
+        <div class="media">
+          <img src="./student_projects/projects_thumbnails/aerial.PNG" class="mr-3" style="height: 200px; width: 200px;">
+          <div class="media-body">
+            <a data-toggle="modal" data-target="#file5"  class="file-pre-link"><h5 class="mt-0">Analyzing Archaeological Sites Using Drones</h5></a>
+            <p>Type of file: PowerPoint / Presentation</p>
+            
+            <p class="lead">By: Emma C K Rinn and Professor Ivančica Schrunk</p>
+            <p>
+              <span>year: 2018;</span>
+              <span style="color: #a97cca;cursor: pointer;text-decoration: underline;"><a data-toggle="modal" data-target="#file5">View file</a></span>
+            </p>
+            <!-- ABSTRACT -->
+            <p>
+              <a class="btn btn-link" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Read abstract
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample3">
+              <div class="card card-body">
+                Drones are recent additions to many scientific fields. Drones
+                accurately and efficiently collect photo and spatial data,
+                creating data paths, and gaining unique perspectives.
+                Reconstruction during the dig process gives insight to changes
+                in the stages of an area over the small multi-period settlement
+                that has several building phases. I traveled to the
+                archaeological site at Saint Clement Island, Croatia to
+                participate in the Soline Project 2018 excavation to understand
+                the sequence of archaeological layers and the phases of built
+                features. The site on Saint Clement Island is a small-scale
+                excavation of a Roman maritime villa. There is evidence that
+                this settlement was used from Early Imperial to Late Antiquity,
+                with changes and additions to the architecture over time1. The
+                mix of structures from salt works, residential, warehouse and
+                production give evidence to what the area was used for over
+                time. I performed flights over two weeks at the site with a DJI
+                Phantom to acquire data then processed it in ESRI's ArcGIS
+                Pro/Scene software. Sequential recording of the site over time
+                is an invaluable tool for sharing the excavation process. Still
+                photography and day books of the excavation can never give a
+                full picture of the excavation process. Most archaeological sites
+                are never fully excavated, but excavations may be resumed at a
+                later point in time, making this type of excavation record
+                invaluable since it recreates the direct participation at the site.
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="file5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="max-width: 80%; height: 80%;" role="document">
+                <div class="modal-content" style="height: 100%;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- FILE !!!!  -->
+                    <object class="full-obj-size" data="./student_projects/2018 Emma Rinn poster 2018.pdf" type="application/pdf">
+                      <embed class="full-emb-size" src="./student_projects/2018 Emma Rinn poster 2018.pdf" type="application/pdf" />
+                    </object>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form method="get" action="./student_projects/2018 Emma Rinn poster 2018.pdf">
+                      <button type="submit" class="btn btn-primary">Download File</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="media">
+          <img src="./student_projects/projects_thumbnails/drone.png" class="mr-3" style="height: 200px; width: 200px;">
+          <div class="media-body">
+            <a data-toggle="modal" data-target="#file6" class="file-pre-link"><h5 class="mt-0">Drones, Landscape and Archaeology</h5></a>
+            <p>Type of file: PowerPoint / Presentation</p>
+
+            <p class="lead">Alice Ready and Paul Lorah. Sustainability Scholar Grant</p>
+            <p>
+              <span>year: 2018;</span>
+              <span style="color: #a97cca;cursor: pointer;text-decoration: underline;"><a data-toggle="modal" data-target="#file6">View file</a></span>
+            </p>
+            <!-- ABSTRACT -->
+            <p>
+              <a class="btn btn-link" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Read abstract
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample4">
+              <div class="card card-body">
+                Remote sensing via aircrafts and satellites is significantly
+                helpful to archaeological efforts, especially for site analysis and
+                targeting excavation efforts (Kelley et al. 2017). Unfortunately,
+                most of this imagery is very low resolution, making detecting
+                change on small-scale sites very difficult (Tang et. al 2015). Where
+                acquiring remotely sensed data via aircrafts and satellites is costly
+                and generates low resolution images, drones are an increasingly
+                valuable archaeological tool.
+                The archaeological work at this site has not yet implemented
+                this drone technology to map the site or to study the relationship
+                between the environment and ancient human sites. This research
+                greatly contributes to the preservation of Croatian cultural and
+                archaeological heritage and to the local community development
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="file6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="max-width: 80%; height: 80%;" role="document">
+                <div class="modal-content" style="height: 100%;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- FILE !!!!  -->
+                    <object class="full-obj-size" data="./student_projects/2018 Alice Ready poster.pdf" type="application/pdf">
+                      <embed class="full-emb-size" src="./student_projects/2018 Alice Ready poster.pdf" type="application/pdf" />
+                    </object>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form method="get" action="./student_projects/2018 Alice Ready poster.pdf">
+                      <button type="submit" class="btn btn-primary">Download File</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="media">
+          <img src="./student_projects/projects_thumbnails/humanuse.PNG" class="mr-3" style="height: 200px; width: 200px;">
+          <div class="media-body">
+            <a data-toggle="modal" data-target="#file7" class="file-pre-link"><h5 class="mt-0">Comparing human use of an Adriatic Island enviroment during the Roman Empire and Modern Times</h5></a>
+            <p>Type of file: PowerPoint / Presentation</p>
+
+            <p class="lead">Caitlin Woodard and Dr. Ivancica Schrunk</p>
+            <p>
+              <span>year: 2015;</span>
+              <span style="color: #a97cca;cursor: pointer;text-decoration: underline;"><a data-toggle="modal" data-target="#file7">View file</a></span>
+            </p>
+            <!-- ABSTRACT -->
+            <p>
+              <a class="btn btn-link" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Read abstract
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample5">
+              <div class="card card-body">
+                The island of Sv. Klement in central Dalmatia, Croatia, has been inhabited
+                since prehistoric times. Since 2007, Dr. Ivancica Schrunk has been
+                excavating a Roman villa in the Soline bay, located near the present
+                village of Vlaka. Several UST geography students collected valuable
+                geographic and ecological data about the island, but investigation about
+                the relationship between humans and the environment have been only
+                preliminary.
+                I have collaborated with Dr. Ivancica Schrunk on her archaeological
+                research by assisting in the excavation of the ancient site to better
+                understand the human activities and life during the Roman Empire. I have
+                examined the present settlement in its landscape to determine how the
+                locals utilize the environment.
+                This project is important to the broader community and to each of my fields
+                of study. For environmental studies, it will highlight the impact of humans
+                on an island environment. For geography, it will examine ancient and
+                contemporary human interaction with landscapes unique to island
+                environments. For history, it will illustrate historical change within an island
+                habitat, and provide insight into the role of historical change throughout the
+                entire Mediterranean region. This research will advance the
+                multidisciplinary research of the Roman site and will allow me to apply
+                different disciplines to realize world issues.
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="file7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="max-width: 80%; height: 80%;" role="document">
+                <div class="modal-content" style="height: 100%;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- FILE !!!!  -->
+                    <object class="full-obj-size" data="./student_projects/2015 Caitlin Woodard Poster.pdf" type="application/pdf">
+                      <embed class="full-emb-size" src="./student_projects/2015 Caitlin Woodard Poster.pdf" type="application/pdf" />
+                    </object>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form method="get" action="./student_projects/2015 Caitlin Woodard Poster.pdf">
+                      <button type="submit" class="btn btn-primary">Download File</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row py-3">
+        <div class="media">
+          <img src="./student_projects/projects_thumbnails/vino2.png" class="mr-3" style="height: 200px; width: 200px;">
+          <div class="media-body">
+            <a data-toggle="modal" data-target="#file9" class="file-pre-link"><h5 class="mt-0">In Vino Veritas: The History of Wine in Ancient Roman Dalmatia</h5></a>
+            <p>Type of file: Paper and Presentation</p>
+
+            <p class="lead">Andrew Ring</p>
+            <p>
+              <span>year: 2015;</span>
+              <span style="color: #a97cca;cursor: pointer;text-decoration: underline;"><a data-toggle="modal" data-target="#file9">View file</a></span>
+            </p>
+            <!-- ABSTRACT -->
+            <p>
+              <a class="btn btn-link" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Read abstract
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample6">
+              <div class="card card-body">
+                This research explores the economic role that
+                viticulture played in the ancient Roman province of
+                Dalmatia in modern Croatia. Through examination of both
+                the archaeological record and ancient written sources it
+                was found that the Romans spread vineyards throughout
+                their empire to economically exploit the natural resources
+                of their territories. When the Romans annexed Dalmatia
+                they found that the only viable land for vines lay along the
+                Adriatic coast. Here viticulture had been practiced
+                possibly as far back as the Neolithic period, and was
+                developed during Hellenistic colonization. Later as the
+                Romans appropriated the region wealthy Roman citizens
+                and veterans obtained land where they developed villas.
+                These villas were large agricultural enterprises that
+                produced a variety of crops. The most profitable cash
+                crop according to ancient sources were grapes for the
+                production of wine. This profitability made viticulture
+                attractive, and caused the further growth of vineyards
+                along Dalmatia’s Adriatic coast and islands.
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="file9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="max-width: 80%; height: 80%;" role="document">
+                <div class="modal-content" style="height: 100%;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- FILE !!!!  -->
+                    <h4>Paper</h4>
+                    <object class="obj-size" data="./student_projects/2015 Andrew Ring 2015.pdf" type="application/pdf">
+                      <embed class="emb-size" src="./student_projects/2015 Andrew Ring 2015.pdf" type="application/pdf" />
+                    </object>
+                    <h4>Presentation</h4>
+                    <object class="obj-size" data="./student_projects/2015 A Ring In Vino Veritas Poster.pdf" type="application/pdf">
+                      <embed class="emb-size" src="./student_projects/2015 A Ring In Vino Veritas Poster.pdf" type="application/pdf" />
+                    </object>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form method="get" action="./student_projects/2015 Andrew Ring 2015.pdf">
+                      <button type="submit" class="btn btn-primary">Download File</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <!-- Last One -->
+        <div class="row pt-3">
+          <div class="media">
+            <img src="./student_projects/projects_thumbnails/water2.jpg" class="mr-3" style="height: 200px; width: 200px;">
+            <div class="media-body">
+              <a data-toggle="modal" data-target="#file11" class="file-pre-link"><h5 class="mt-0">Historical Perspective of the Water Use Practices in an Arid Mediterranean Habitat – Islands of Hvar and St. Clement</h5></a>
+              <p>Type of file: Paper and Presentation</p>
+              
+              <p class="lead">Channing James</p>
+              <p>
+                <span>year: 2011;</span>
+                <span style="color: #a97cca;cursor: pointer;text-decoration: underline;"><a data-toggle="modal" data-target="#file11">View file</a></span>
+              </p>
+              
+            <!-- ABSTRACT -->
+            <p>
+              <a class="btn btn-link" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Read abstract
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample7">
+              <div class="card card-body">
+                The coast of Croatia and its nearby islands maintain an arid
+                climate. These areas receive an average annual rainfall of
+                816 mm and a summer temperature ranging between 25°C
+                and 35°C. They include few freshwater sources. The island of
+                Hvar is one of the most arid and inhabited islands in
+                Dalmatia. It is quite small (114 square miles) and not
+                heavily populated (11,500 residents). St. Clement (Sv.
+                Klement) Island is even smaller (2.0 square miles) and far
+                less populated, with only one person living there throughout
+                the year and varying amounts of others visiting in warmer
+                months. Through personal interviews and research, it was
+                found that in the past people living on both Hvar Island and
+                St. Clement collected rainwater via cisterns usually located
+                outside of their own homes or natural springs that may have
+                been near, a practice continued from ancient times. In 1986,
+                the Brač pipeline was built. It transports freshwater from
+                the mainland river Cetina to the southern regions of Croatia
+                and the islands of Brač, Šolta, and Hvar. Water practices
+                have changed considerably, with the biggest change being
+                that water is not treated as a limited resource. This new
+                attitude, combined with increased tourism (ca 170,000
+                tourists visit Hvar island during summer months; the
+                average stay is 5 days per individual) resulted in increased
+                water use, and thus increased waste water flows into the sea
+                (there is no wastewater treatment plant on the island). The
+                question that this project focused on was whether the
+                estrogens were present in the drinking water samples
+                (modern vs. traditionally generated), and range of aquatic
+                environments. This question was addressed through the
+                analyses of a variety of drinking water, spring water, and
+                seawater samples to assess the estrogenic activity (estradiol
+                concentrations) in each, as estradiol is a good indicator of
+                estrogenic pollution.
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="file11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="max-width: 80%; height: 80%;" role="document">
+                <div class="modal-content" style="height: 100%;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- FILE !!!!  -->
+                    <h4>Paper</h4>
+                    <object class="obj-size" data="./student_projects/2011 Channing Water Use.pdf" type="application/pdf">
+                      <embed class="emb-size" src="./student_projects/2011 Channing Water Use.pdf.pdf" type="application/pdf" />
+                    </object>
+                    <h4>Presentation</h4>
+                    <object class="obj-size" data="./student_projects/2011 Channing James Poster.pdf" type="application/pdf">
+                      <embed class="emb-size" src="./student_projects/2011 Channing James Poster.pdf" type="application/pdf" />
+                    </object>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form method="get" action="./student_projects/2011 Channing James Poster.pdf">
+                      <button type="submit" class="btn btn-primary">Download File</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 purpleThree-BG">
+    <div class="container">
+      <p class="m-0 text-center text-black">UST ITS &copy; stthomas.edu 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
