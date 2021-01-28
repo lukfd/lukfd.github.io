@@ -42,11 +42,10 @@
       $('#'+year).css({'display':'block'});
     }
 
-
   </script>
 
   <style>
-    .carousel {
+    .carousel-overview {
       height:70vh;
       width:100%;
     }
@@ -77,6 +76,18 @@
       transform: translate(-50%, -50%)
     }
 
+    /* carousel year */
+    
+    .carousel-year .carousel-item-year {
+      height:500px;
+    }
+
+    .carousel-item-year img {
+      position: absolute;
+      min-height: 500px;
+      object-fit: cover;
+    }
+
   </style>
 
 </head>
@@ -105,7 +116,7 @@
             <a class="nav-link js-scroll-trigger" href="./publications.html">Publications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="./students.html">Students Projects</a>
+            <a class="nav-link js-scroll-trigger" href="./students.html">Student Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="./experience.html">Student Experience</a>
@@ -119,7 +130,7 @@
   <header class="header">
     <div class="row">
       <div class="col">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselExampleFade" class="carousel-overview slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./images/header_original.jpg" class="d-block w-100 img-car" alt="...">
@@ -332,7 +343,7 @@
     <div class="container">
       <div class="row pb-5">
         <div class="col">
-          <h1>Students and volunteers</h1>
+          <h1>Fieldwork, Students and Volunteers</h1>
         </div>
       </div>
       <div class="row pb-5">
@@ -388,9 +399,59 @@
           <p> <b>Spring Collaborative Research grant:</b>  Elizabeth Kaiser (Mechanical Engineering major), Jacob Slaughter (Geography major), University of St. Thomas.</p>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2019">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2019</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2019" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/clearing 2.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/Probe 21, Screening, Excavating, Recording 2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item carousel-item-year">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/Soline 2019 Fresco Fragments, White with Pompiian Red.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item carousel-item-year">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/Soline 2019, Students Cleaning Potsherds.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item carousel-item-year">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/Soline 2019, Vanča _ Three Students.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item carousel-item-year">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/Madi pics - need permission/IMG_4378.JPG" alt="Third slide">
+                </div>
+                <div class="carousel-item carousel-item-year">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/Madi pics - need permission/IMG_4381.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item carousel-item-year">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/Madi pics - need permission/IMG_4568.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item carousel-item-year">
+                  <img class="d-block w-100" src="./images/Photos/2019 photos/Madi pics - need permission/IMG_4573.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2019" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2019" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2019 funded by the grant from the University of St. Thomas, the volunteers’ donations/corporate match and individual donations</h6>
           <p class="lead">
@@ -405,12 +466,12 @@
             <div class="card card-body">
               The expansion to the west showed that the northern perimeter wall continued westward, where the ancient salt works were located. The soil layer below the foundation of the northern wall that contained those rich finds last year, proved to be a layer of fill of discarded remains of building material (stone, roof tiles), decomposed mortar and fragments of painted wall plaster. Mixed in it were pottery sherds, mosaic tesserae, 52 late Roman bronze coins (4th-5th c.) and one bronze key of a type current in the Early Empire. The fill might have been deposited after some rebuilding or renovation in the 6th century or later. Study of the finds in the fill, especially coins, will clarify these changes. 
 
-University of St. Thomas Art History major, Madeline Olson, a recipient of a Young Scholar grant, conducted research in collaboration with Dr. Vanessa Rousseau on the use of pigments in wall paintings found in the villa excavations.
+              University of St. Thomas Art History major, Madeline Olson, a recipient of a Young Scholar grant, conducted research in collaboration with Dr. Vanessa Rousseau on the use of pigments in wall paintings found in the villa excavations.
 
             </div>
           </div>
           <p><b>Students:</b> Mitchell Heesch (Classical Civilization Major, Art History and History minor), Madeline Olson (Art History major, Museum Studies minor) and Mara Williams (Biology major), University of St. Thomas</p>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
             <li class="py-1">Tom Lumsden, volunteer, USA</li>
@@ -422,9 +483,53 @@ University of St. Thomas Art History major, Madeline Olson, a recipient of a You
           </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2018">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2018</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2018" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2018 photos/2018 dig Croatia.JPG">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2018 photos/2018, The TOMMY CREW.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2018 photos/Alice,Emma 2018.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2018 photos/Emma1.jpeg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2018 photos/Emma_storymapimage.JPG">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2018 photos/Fresco discussion 2018.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2018 photos/Fresco, cleaned 2018.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2018" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2018" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2018 funded by the grants from the University of St. Thomas, the Archaeo/Community Foundation and the volunteers’ donations/corporate match</h6>
           <p class="lead">
@@ -446,7 +551,7 @@ North African and Aegean imports. There were also several fragments of ceramic b
           </div>
           <p><b>Students:</b> Meg Boevers (History Major), Noah Gregg (History major, Museum Studies minor), Benjamin Linke (Geology major, Geography minor), Alexandra Mohn (History major), Alice Ready (Geography major), Emma Rinn (Geography major), Lily Ward (Biology major), University of St. Thomas
           </p>
-            <p> <b>Professional and volunteer:</b></p>
+            <p> <b>Professional and Volunteer Team:</b></p>
             <ul style="list-style: none;">
               <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
               <li class="py-1">Valentino Džaja, excavator, Split</li>
@@ -461,9 +566,47 @@ North African and Aegean imports. There were also several fragments of ceramic b
             </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2017">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2017</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2017" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2017 photos/day2 2017-2.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2017 photos/Excavation 2017.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2017 photos/excavation and survey 2017.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2017 photos/site view 2017.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2017 photos/UST team 2017.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2017" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2017" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2017 funded by the grants from the University of St. Thomas, the Archaeo/Community Foundation and the volunteers’ donations</h6>
           <p class="lead">
@@ -485,7 +628,7 @@ Probe 19 provided new evidence for the layout, chronology and architectural chan
           <p><b>Students:</b>Filip Vukoja, University of Zagreb 
             Kenzi Coborn (Geography major), William Frost (Mechanical Engineering major), Matthew Schultenover (History major), Jacob Wood (Geography major), University of St. Thomas.
             </p>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
             <li class="py-1">Andrea Devlahović, archaeologist, documentation, Arheološki muzej Starigrad, Hvar Island</li>
@@ -501,9 +644,44 @@ Probe 19 provided new evidence for the layout, chronology and architectural chan
           </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2016">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2016</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2016" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2016 photos/2016 amphora.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2016 photos/Excavation 2016-2.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2016 photos/Excavation 2016.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2016 photos/UST team 2016.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2016" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2016" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2016 funded by the grants from the Archaeo/Community Foundation, the University of St. Thomas and the volunteers’ donations</h6>
           <p class="lead">
@@ -521,7 +699,7 @@ A large number of white limestone tesserae of various sizes were found in both p
             </div>
           </div>
           <p><b>Students:</b>Quinn Blattner (History major), Mara Cavanaugh (History major), Courtney Eickhoff (Geography major), Emily Heimerman (History major), Margaret Misey (Geography major), University of St. Thomas </p>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
             <li class="py-1">Dr. Gordana Berc, volunteer, social work professor, University of Zagreb</li>
@@ -539,9 +717,50 @@ A large number of white limestone tesserae of various sizes were found in both p
           </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2015">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2015</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2015" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2015 photos/ 2015 Andrew, Caitlin.JPG">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2015 photos/Andrew, Caitlin 2015.JPG">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2015 photos/Excavation 2015-2.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2015 photos/Excavation 2015.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2015 photos/pottery wash 2015.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2015 photos/UST team 2015.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2015" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2015" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2015 funded by the grants from the Archaeo/Community Foundation and the University of St. Thomas </h6>
           <p class="lead">
@@ -563,7 +782,7 @@ Two University of St. Thomas students, Andrew Ring and Caitlin Woodard, received
           <p><b>Students:</b>Nikolina Kordić, University of Zagreb 
             Taylor Gordon (Geology major, History minor), Pierce McDowell (History major), Andrew Ring (History major), Abigail Smith (History major), Meghan Walter (History major) and Caitlin Woodard (Geography/Environmental Studies major, History minor), University of St. Thomas.
              </p>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
             <li class="py-1">Blaž Jakus, excavator, Split </li>
@@ -580,9 +799,41 @@ Two University of St. Thomas students, Andrew Ring and Caitlin Woodard, received
           </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2014">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2014</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2014" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2014 photos/bronze pitcher crop 2014.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2014 photos/excavation 2014.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2014 photos/trench start 2014.jpg">
+                </div>                
+              </div>
+              <a class="carousel-control-prev" href="#carousel2014" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2014" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2014 funded by the grants from the Archaeo/Community Foundation and the University of St. Thomas </h6>
           <p class="lead">
@@ -603,7 +854,7 @@ Biology major Richard Rossing received a Young Scholar grant to research water-u
           </div>
           <p><b>Students:</b> Benjamin Duclos (History major), Emily Heimerman (History major), Richard Rossing (Biology and English major and Chemistry minor) and April Terres (Geology major), University of St. Thomas.
           </p>
-          <p> <b>Professional and volunteer:</b> </p>
+          <p> <b>Professional and Volunteer Team:</b> </p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
             <li class="py-1">Jasmina Beneta, surveyor, Split</li>
@@ -621,9 +872,44 @@ Biology major Richard Rossing received a Young Scholar grant to research water-u
           </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2013">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2013</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2013" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2013 photos/2013 team.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2013 photos/looking for stamped rooftiles 2013.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2013 photos/Rooftile Pansiana workshop 2013.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2013 photos/UST Team 2013.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2013" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2013" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2013 funded by the grants from the Archaeo/Community Foundation, the University of St. Thomas and the University of Graz</h6>
           <p class="lead">
@@ -643,7 +929,7 @@ Biology major Richard Rossing received a Young Scholar grant to research water-u
           <p><b>Students:</b>Christopher Del Basso (Fordham U) Doris Lentz and Ferdinand Mittermaier (U Graz); Tonia Zanko (U Zadar, Croatia)
             Jeffrey Hartmann (Education major and M. Ed.), Matthew Rappeport (Geology major, History minor), Michaela Smith (History major), Laura Thompson-Woodland (History major), and Mai Vang (History major), University of St. Thomas.
             </p>
-            <p> <b>Professional and volunteer:</b></p>
+            <p> <b>Professional and Volunteer Team:</b></p>
             <ul style="list-style: none;">
               <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
               <li class="py-1">Amy Farrior, volunteer, USA </li>
@@ -663,9 +949,35 @@ Biology major Richard Rossing received a Young Scholar grant to research water-u
             </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2012">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2012</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2012" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2012 photos/2012 site panorama, trenches backfilled.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2012" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2012" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2012 funded by the grants from the Archaeo/Community Foundation, the University of St. Thomas and the University of Graz</h6>
           <p class="lead">
@@ -687,7 +999,7 @@ Three archaeologists from the University of Zadar, Croatia, conducted underwater
           <p><b>Students:</b>Lisa Aldrian, Ferdinand Mittermaier, Silvia Zenz (University of Graz).
             Jaime Grundman (History major), Jeffrey Hartmann (Education major and M. Ed.), Caitlin Steele (Psychology major), Laura Thompson-Woodland (History major), Nicholas Yannarelly (Geography major), University of St. Thomas.
             </p>
-            <p> <b>Professional and volunteer:</b></p>
+            <p> <b>Professional and Volunteer Team:</b></p>
             <ul style="list-style: none;">
               <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb </li>
               <li class="py-1">Dr. Branko Kirigin, archaeologist, project consultant, Arheološki muzej, Split</li>
@@ -705,9 +1017,44 @@ Three archaeologists from the University of Zadar, Croatia, conducted underwater
             </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2011">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2011</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2011" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2011 photos/Excavation 2011.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2011 photos/team 2011 lunch at Dionis.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2011 photos/Vodeni rat 2011.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2011 photos/Vodeni rat water pit.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2011" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2011" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2011 funded by the grants from the Archaeo/Community Foundation, the University of St. Thomas and the University of Graz</h6>
           <p class="lead">
@@ -728,7 +1075,7 @@ Marinko Petrić organized the first public presentation of the Soline site and i
           </div>
           <p> <b>Students participating:</b>  Florian Dinius (University of Graz), Michiel van Veldhuizen (Brandeis University), Silvia Zenz (University of Graz).
             Andrew Herkert (Art History major & MA), Andrew Jacobs (History major), Channing James (Biology major), Joseph St. Clair (Classical Civilization major), Laura Thompson-Woodland (History major), University of St. Thomas.</p>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
             <li class="py-1">Dr. Gordana Berc, volunteer, social work professor, University of Zagreb</li>
@@ -748,9 +1095,47 @@ Marinko Petrić organized the first public presentation of the Soline site and i
           </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2010">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2010</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2010" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2010 photos/Cynthia Burtom, Andrew Herkert 2010.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2010 photos/Felix, Jesus 2010.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2010 photos/Renee Huset, Matthew Weishan 2010 .jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2010 photos/Site view 2010.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2010 photos/Team 2010.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2010" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2010" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2010 funded by the grants from the Archaeo/Community Foundation, the University of St. Thomas and the German Archaeological Institute</h6>
           <p class="lead">
@@ -769,7 +1154,7 @@ This season, two students of geography from the University of St. Thomas, Renee 
             </div>
           </div>
           <p><b>Students:</b> Cynthia Burton, Andrew Herkert (Art History Major and MA), Renee Huset (Geography major), Sarah Leonard (History Major), Joseph Talarico (Biology major and History minor) and Matthew Weishan (Geography major), University of St. Thomas</p>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
             <li class="py-1">Dr. Gordana Berc, volunteer, social work professor, University of Zagreb</li>
@@ -787,9 +1172,41 @@ This season, two students of geography from the University of St. Thomas, Renee 
           </ul>
         </div>
       </div>
+
       <div class="row py-5 jshow" id="2009">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2009</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2009" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2009 photos/Madi Bruber _ Sarah Leonard 2009.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2009 photos/Jon Estes exploring salt works 2009.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2009 photos/students at lime kiln 2009.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2009" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2009" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2009 funded by the grant from the Archaeo/Community Foundation</h6>
           <p class="lead">
@@ -806,7 +1223,7 @@ This season, two students of geography from the University of St. Thomas, Renee 
             </div>
           </div>
           <p><b>Students:</b> Madison Bruber (History Major), Jonathan Estes (History Major) and Sarah Leonard (History Major), University of St. Thomas</p>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb</li>
             <li class="py-1">Dr. Gordana Berc, volunteer, social work professor, University of Zagreb</li>
@@ -824,9 +1241,38 @@ This season, two students of geography from the University of St. Thomas, Renee 
           </ul>
         </div>
       </div>
+
       <div class="row pt-5 jshow" id="2008">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2008</h2>
+          <!-- Photos -->
+          <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2008" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2008 photos/crew 2008.jpg">
+                </div>
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/2008 photos/Team 2008 in Building A.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2008" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2008" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2008 funded by the grant from the Archaeo/Community Foundation</h6>
           <p class="lead">
@@ -844,7 +1290,7 @@ Two students from the University of St. Thomas and one from Gustavus Adolphus Co
             </div>
           </div>
           <p class="lead"> <b>Students:</b>  Ericka Ashley (History major) and Madison Bruber (History major), University of St. Thomas; Abbie Hietzman, Gustavus Adolphus College</p>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb, Croatia</li>
             <li class="py-1">Dr. Gordana Berc, volunteer, social work professor, University of Zagreb</li>
@@ -859,9 +1305,35 @@ Two students from the University of St. Thomas and one from Gustavus Adolphus Co
           </ul>
         </div>
       </div>
+
       <div class="row pt-5 jshow" id="2007">
         <div class="col-lg-8 mx-auto">
           <h2 id="headers-font">2007</h2>
+          <!-- Photos -->
+          <!-- <div class="py-3">
+            <div class="row">
+              <div class="col">
+                <h4 id="purplefour">Photos</h4>
+              </div>
+            </div>
+            
+            <div id="carousel2019" class="carousel carousel-year slide container" data-ride="carousel-year">
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-year active">
+                  <img class="d-block w-100" src="./images/Photos/">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel2019" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel2019" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div> -->
+          <!-- Description -->
           <h4 id="purpleTwo">Summary</h4>
           <h6 id="greenblue">Archaeological Research in 2007 funded by the grant from the Archaeo/Community Foundation and the contribution from the Heritage Museum of Hvar</h6>
           <p class="lead">
@@ -878,7 +1350,7 @@ Two students from the University of St. Thomas and one from Gustavus Adolphus Co
               The archaeological potential was obvious to us in 2007. The historical significance of the site was anticipated in view of the Greek colonies, founded in the 4th century BCE on the neighboring islands, as well as Roman and Byzantine sites on these islands.  Indeed, our surveys and a test probe in 2007 provided the essential information toward resolving questions related to the extent, layout, chronology and historical significance of the villa site. The small but significant finds of Hellenistic and Roman Republican pottery pushed back the previously estimated date of the site. Fragments of North African and East Mediterranean Red Slip Ware, fine tableware of the 4th to 6h centuries produced around Carthage and at Phocaea (Turkey), indicated the significance of the site in the late Roman period.  Such imported ware is found only on major sites in the Adriatic, such as Emperor Diocletian’s palace at Split. Additional finds of North African and Byzantine (Aegean) amphorae of the 6th century CE confirmed the site’s importance in economy and navigation during late antiquity.
             </div>
           </div>
-          <p> <b>Professional and volunteer:</b></p>
+          <p> <b>Professional and Volunteer Team:</b></p>
           <ul style="list-style: none;">
             <li class="py-1">Dr. Vlasta Begović, architect/archaeologist, Institute of archaeology, Zagreb, Croatia</li>
             <li class="py-1">John Crary, volunteer, director Archaeo/Community Foundation, USA</li>
@@ -892,6 +1364,42 @@ Two students from the University of St. Thomas and one from Gustavus Adolphus Co
             <li class="py-1">Thomas Schrunk, photographer, USA</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section id="" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Excavation Sponsors and Funding</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <div style="height: 5em;"></div>
+        <h5 style="color: black;" class="px-2 py-2">Archaeo/Community Foundation</h5>
+      </div>
+      <div class="col">
+        <img src="./images/Logos Institutional/Logo/Digital/UST_sig_rgb.jpg" height="200em" alt="" name="img-2">
+        <figcaption class="px-2 pb-5">University of St. Thomas</figcaption>
+      </div>
+
+      <div class="col">
+        <img src="./images/museum_logo_sponsor.jpg" height="200em" alt="" name="img-3">
+        <figcaption class="px-2 pb-5">Museum of Hvar Heritage</figcaption>
+      </div>
+
+      <div class="col">
+        <img src="./images/institute_of_archaeology_zagreb.jpg" height="200em" alt="" name="img-4">
+        <figcaption class="px-2 pb-5">Institute of Archaeology, Zagreb</figcaption>
+      </div>
+
+      <div class="col">
+        <div style="height: 5em;"></div>
+        <h5 style="color: black;" class="px-2 py-2">Project volunteers and individual donors</h5>
       </div>
     </div>
   </section>
