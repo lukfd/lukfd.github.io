@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="University of St. Thomas">
+
+  <title></title>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap' carousel -->
+  <script>
+    $('.carousel').carousel({
+      touch: true
+    })
+  </script>
+
+  <style>
+    .carousel {
+      height:70vh;
+      width:100%;
+    }
+
+    .img-car {
+      max-height: 70vh; 
+      min-height: 70vh;
+      object-fit: cover;
+
+      filter: brightness(0.7);
+    }
+
+    .move-up {
+      object-position: 50% 20%;
+    }
+
+    .title-car {
+      z-index: 2;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+  </style>
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="./index.html">
+        <img src="./images/ust-logo.png" alt="" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse my-3" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" id="headers-font">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./excavation.html">Excavation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./students.html">Student Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./experience.html">Student Experience</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/header_original.jpg" class="d-block w-100 img-car" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/from_plane_header.jpg" class="d-block w-100 img-car" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/city_header.jpg" class="d-block w-100 img-car" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/drone small_header.jpg" class="d-block w-100 img-car move-up" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Photos/2015 photos/ 2015 Andrew, Caitlin.JPG" class="img-car move-up d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Photos/2016 photos/Excavation 2016.jpg" class="d-block w-100 img-car move-up" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Soline_site panoramic.JPG" class="d-block w-100 img-car move-up" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="text-center title-car w-100">
+          <h1 style="font-size: 48px; color: white; text-shadow: 2px 2px 2px #9e28b5;">University of St. Thomas</h1>
+          <h3 style="font-size: 24px; color: white; text-shadow: 2px 2px 2px #9e28b5;">Interdisciplinary Student Research in Croatia</h3>
+        </div>
+      </div>
+    </div>
+  </header>  
+  
+  <!-- Excavations -->
+  <section id="excavations">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">          
+          <p class="lead">
+            This living document shares interdisciplinary research conducted by St. Thomas
+            undergraduate students in collaboration with faculty mentors at the Roman archaeological
+            villa site on St. Clement Island (Sveti Klement), Croatia. This resource highlights
+            continuing fieldwork and collaborative research across disciplines that contributes to
+            students’ academic experiences and professional skills, as well as cultural heritage
+            preservation and environmental sustainability. We intend this digital repository to grow
+            and inspire new interdisciplinary work as students and faculty contribute to the Common
+            Good via a large diachronic project that benefits their university and cultural heritage
+            preservation while highlighting St. Thomas’s commitment to interdisciplinary inquiry,
+            intercultural understanding, and global engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brief History -->
+  <section id="" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Interdisciplinary Student Research Projects</h2>
+          <div class="row p-5">
+            <div class="col">
+              <img src="./images/Photos/2017 photos/site view 2017.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <p class="lead">
+            Since 2008, forty-eight St. Thomas students from the departments of Art History,
+            Biology, Classical Civilization, Education, Engineering, Environmental Studies,
+            Geography, Geology and History have participated in the excavation and conducted
+            research at the site. Several students received Young Scholar or Sustainability Scholar
+            grants for collaborative research with St. Thomas faculty. Their projects included X-Ray
+            fluorescence pigment analysis of Roman wall painting, human-environment relations
+            (one GIS mapping and one with drone data collection and story mapping), drone mapping
+            the excavation process, ancient and modern water management, Roman and modern wine
+            making, and the effect of sea level changes on ancient structures. The students produced
+            posters, papers and digital works like story maps, and some presented their work at local
+            and national conferences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section id="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Goals of the website</h2>
+          <p class="lead">
+            The website is intended as a teaching and learning tool in the active pedagogy of liberal
+            arts education that integrates ideas and perspectives across disciplines (Integration in the
+            Humanities). Gathering these varied approaches together in one virtual space allows
+            faculty and students to draw upon the site for general research or more specific
+            applications for research or classroom activities with the potential for augmenting the
+            site, thus adding to a body of historical knowledge while contributing to an ongoing
+            university resource.
+          </p>
+          <div class="py-3">
+            <h5>Website Projects directors</h5>
+            <p class="lead">
+              Vanessa Rousseau (Art History, <a href="mailto:vrousseau@stthomas.edu">vrousseau@stthomas.edu</a>)
+            </p>
+            <p class="lead">
+              Ivančica Schrunk (History, <a href="mailto:idschrunk@stthomas.edu">idschrunk@stthomas.edu</a> )
+            </p>
+            <p class="lead">
+              This website was made possible by a Digital Humanities Faculty Research Project grant from CAS in collaboration with Stelar. Technical expertise provided by Eric Tornoe and Luca Comba.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVerview of the Archeological site -->
+
+  <!-- Adriatic map, aerial views of site -->
+  <section id="" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>The map</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1773.41846501468!2d16.363309058291254!3d43.162797394785365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133583aac773b12f%3A0xfb18e99357477f77!2sArcheological%20Villa%20Rustica!5e1!3m2!1sen!2sus!4v1606630063004!5m2!1sen!2sus" width="800" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col">
+          <p>Roman Villa in Soline Bay, Sveti Klement Island, Croatia</p>
+          <a href="./excavation.html" style="font-size: 18px;">Read more about the excavation history</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ongoing project stuff and institutions -->
+  <section id="">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Excavation Staff and Institutions</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Dr. Vlasta Begović, architect/archaeologist, Institute of Archaeology, Zagreb</p>
+
+          <p>Dr. Branko Kirigin, archaeologist, project director 2007-2010, Arhaeological Museum, Split</p>
+
+          <p>Marinko Petrić, art historian, senior curator, Muzej hvarske baštine (Museum of Hvar Heritage), Hvar</p>
+
+          <p>Dr. Ivančica Schrunk, archaeologist, University of St. Thomas, St Paul, MN</p>
+
+          <p>Thomas Schrunk, art historian, artist, photographer, Minneapolis, MN</p>
+
+          <p>Dr. Marina Ugarković, archaeologist, project director 2011-present, Institute of archaeology, Zagreb</p>
+
+          <p>Eduard Visković, archaeologist, Kantharos, Hvar</p>
+
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 purpleThree-BG">
+    <div class="container">
+      <p class="m-0 text-center text-black">University Of St. Thomas ITS &copy; 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
