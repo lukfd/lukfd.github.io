@@ -1480,9 +1480,20 @@ Two students from the University of St. Thomas and one from Gustavus Adolphus Co
   <!-- Footer -->
   <footer class="py-3 purpleThree-BG">
     <div class="container">
-      <p class="m-0 text-center text-black">University Of St. Thomas &copy; 2020-21</p>
+      <p class="m-0 text-center text-black" id="footer">University Of St. Thomas &copy; </p>
     </div>
-    <!-- /.container -->
+
+
+    <!-- update year automatically -->
+    <script>
+      var currentYear= new Date().getFullYear(); 
+      var element = document.getElementById("footer").innerHTML;
+      var prevYear = (currentYear-1).toString()
+
+      document.getElementById("footer").innerHTML = element + prevYear + '-' + currentYear.toString().substr(-2);
+      
+    </script>
+
   </footer>
 
   <!-- Custom JavaScript for this theme -->
