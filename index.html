@@ -31,16 +31,16 @@
           </div>
         </div>
         <span class="navbar-text">
-          <a href="https://github.com/lukfd" class="btn btn-dark">
+          <a href="https://github.com/lukfd" class="btn btn-dark btn-lg">
             <span class="fab fa-github"></span>
           </a>
-          <a href="https://twitter.com/luca_comba" class="btn btn-dark">
+          <a href="https://twitter.com/luca_comba" class="btn btn-dark btn-lg">
             <span class="fab fa-twitter"></span>
           </a>  
-          <a href="https://www.linkedin.com/in/luca-comba-29000764/" class="btn btn-dark">
+          <a href="https://www.linkedin.com/in/luca-comba-29000764/" class="btn btn-dark btn-lg">
             <span class="fab fa-linkedin"></span>
           </a> 
-          <a href="https://www.youtube.com/channel/UCzITfhQ11v_73eBJTJY41pA" class="btn btn-dark">
+          <a href="https://www.youtube.com/channel/UCzITfhQ11v_73eBJTJY41pA" class="btn btn-dark btn-lg">
             <span class="fab fa-youtube"></span>
           </a>                                  
         </span>
@@ -74,7 +74,7 @@
       <h3 class="text-light">Learn more about me</h3>
 
       <div class="my-2">
-        <a href="./documents/LucaCombaResume.pdf" class="btn btn-dark" download="LucaCombaResume">
+        <a href="./documents/LucaCombaResume.pdf" class="btn btn-dark btn-lg" download="LucaCombaResume">
           <span class="fas fa-download mr-2"></span>my resume
         </a>        
       </div>
@@ -207,50 +207,53 @@
           <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
               <li class="nav-item">
-                <a class="nav-link active" href="#android">Android Apps rating</a>
+                <a class="nav-link active" data-toggle="tab" role="tab" aria-controls="android" aria-selected="true" href="#android">Android Apps rating</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#logo">Logo impacting revenues</a>
+                <a class="nav-link" data-toggle="tab" role="tab" aria-controls="logo" aria-selected="false" href="#logo">Logo impacting revenues</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#strokes">Effectiveness of rehabilitation from strokes</a>
+                <a class="nav-link" data-toggle="tab" role="tab" aria-controls="strokes" aria-selected="false" href="#strokes">Effectiveness of rehabilitation from strokes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!"></a>
+                <a class="nav-link" data-toggle="tab" role="tab" aria-controls="android" aria-selected="false" href="#!"></a>
               </li>
             </ul>
           </div>
-
-          <div class="tab-pane fade show active" id="android" role="tabpanel">
-            <div class="card-body">
-              <h4 class="card-title">Android Apps rating</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="./documents/GooglePlayStoreApps.pdf" class="btn btn-dark btn-lg">Read the research paper</a>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="android" role="tabpanel" aria-labelledby="android">
+              <div class="card-body">
+                <h4 class="card-title">Android Apps rating</h4>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="./documents/GooglePlayStoreApps.pdf" class="btn btn-dark btn-lg">Read the research paper</a>
+              </div>
+            </div>
+            
+            <div class="tab-pane fade" id="logo" role="tabpanel" aria-labelledby="logo">
+              <div class="card-body">
+                <h4 class="card-title">2</h4>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="./documents/GooglePlayStoreApps.pdf" class="btn btn-dark btn-lg">Read the research paper</a>
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="strokes" role="tabpanel" aria-labelledby="strokes">
+              <div class="card-body">
+                <h4 class="card-title">3</h4>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="./documents/GooglePlayStoreApps.pdf" class="btn btn-dark btn-lg">Read the research paper</a>
+              </div>
             </div>
           </div>
           
-          <div class="tab-pane fade" id="logo" role="tabpanel">
-            <div class="card-body">
-              <h4 class="card-title">2</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="./documents/GooglePlayStoreApps.pdf" class="btn btn-dark btn-lg">Read the research paper</a>
-            </div>
-          </div>
 
-          <div class="tab-pane fade" id="strokes" role="tabpanel">
-            <div class="card-body">
-              <h4 class="card-title">3</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="./documents/GooglePlayStoreApps.pdf" class="btn btn-dark btn-lg">Read the research paper</a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="jumbotron jumbo-vertical-center text-light bg-dark text-center mb-0 radius-0" id="publications">
+<div class="jumbotron jumbo-vertical-center text-light bg-dark mb-0 radius-0" id="footer">
   <div class="container">
     <div class="row">
       <div class="col">
