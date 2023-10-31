@@ -15,7 +15,7 @@ const openInNewTab = (url) => {
           Contact me at
           <a href="mailto:luca.comba98@gmail.com">luca.comba98@gmail.com</a>
         </p>
-        <q-btn outline color="secondary" label="Download My Resume" @click="openInNewTab('/documents/LucaCombaResume.pdf')">
+        <q-btn outline color="primary" label="Download My Resume" @click="openInNewTab('/documents/LucaCombaResume.pdf')">
           <q-icon flat dense right name="fa-solid fa-download"/>
         </q-btn>
       </div>
@@ -94,5 +94,10 @@ const openInNewTab = (url) => {
 <style scoped>
 .pictures {
   border-radius: 5%;
+}
+
+a {
+  color: #1F7A8C;
+  text-decoration: none; /* no underline */
 }
 </style>

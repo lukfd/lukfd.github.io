@@ -20,7 +20,7 @@ import Research from './Research/Research.vue'
             <q-breadcrumbs-el label="Home" icon="home" />
           </a>
           <a href="#Experience" class="q-px-sm">
-            <q-breadcrumbs-el label="Experience" icon="fa-solid fa-book" />
+            <q-breadcrumbs-el label="Experience" icon="fa-solid fa-briefcase" />
           </a>
           <a href="#Projects" class="q-px-sm">
             <q-breadcrumbs-el label="Projects" icon="fa-solid fa-computer" />
@@ -35,6 +35,9 @@ import Research from './Research/Research.vue'
           /></a>
           <a href="https://www.youtube.com/channel/UCzITfhQ11v_73eBJTJY41pA"
             ><q-btn flat round dense icon="fa-brands fa-youtube"
+          /></a>
+          <a href="mailto:luca.comba98@gmail.com"
+            ><q-btn flat round dense icon="fa-solid fa-envelope"
           /></a>
         </div>
       </q-toolbar>

@@ -35,7 +35,7 @@
                 />
                 <q-badge
                   class="q-pa-sm q-ma-sm"
-                  color="green"
+                  color="accent"
                   label="Postgres"
                 />
               </q-item-label>
@@ -172,4 +172,9 @@
   </q-page>
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+  color: #1F7A8C;
+  text-decoration: none; /* no underline */
+}
+</style>

@@ -1,9 +1,7 @@
 <script setup></script>
 
 <template>
-  <q-page
-    class="row justify-center items-center q-pa-lg"
-  >
+  <q-page class="row justify-center items-center q-pa-lg">
     <div class="self-center q-px-lg">
       <h2 class="text-center">My experiences</h2>
       <q-timeline
@@ -28,14 +26,26 @@
           </div>
         </q-timeline-entry>
         <q-timeline-entry
+          title="Bachelor Of Science in Computer Science and Applied Statistcs"
+          subtitle="May 2021"
+          color="accent"
+          icon="fa-solid fa-graduation-cap"
+          side="right"
+        >
+          <div>
+            Graduated from the University of St. Thomas, St. Paul, Minnesota.
+            GPA 3.65.
+          </div>
+        </q-timeline-entry>
+        <q-timeline-entry
           title="University of St. Thomas, Web Developer"
           subtitle="September 2020 - June 2021"
           side="right"
         >
           <div>
-            Coded restful server api using JavaScript, wrote documentation and
-            deployed two web applications using Amazon AWS that have reach
-            hundreds of visitors. Demonstrated strong communication skills
+            Coded <b>RESTful server api</b> using Node.js and
+            <b>deployed two web applications using Amazon AWS EC2</b> that have
+            reach hundreds of visitors. Demonstrated strong communication skills
             explaining technical details to St. Thomas professors.
           </div>
         </q-timeline-entry>

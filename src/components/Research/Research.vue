@@ -12,10 +12,10 @@ const openInNewTab = (url) => {
         <q-list>
           <q-item>
             <q-item-section>
-              <div class="text-subtitle1">
+              <div class="text-h6">
                 Streamflow Recession of the Red River
               </div>
-              <div class="text-caption">
+              <div class="text-body2">
                 Impacts of seasonally frozen ground on streamflow recession in
                 the Red River of the North Basin. Statistical analyses revealed
                 that the antecedent winter soil temperature and snowpack control
@@ -28,10 +28,10 @@ const openInNewTab = (url) => {
           </q-item>
           <q-item>
             <q-item-section>
-              <div class="text-subtitle1">
+              <div class="text-h6">
                 What affects Android apps rating?
               </div>
-              <div class="text-caption">
+              <div class="text-body2">
                 Do paid apps have higher ratings versus free apps, and do apps
                 with higher ratings have higher downloads? The end goal is to
                 create a model to give content creators the ability to predict
@@ -43,8 +43,8 @@ const openInNewTab = (url) => {
           </q-item>
           <q-item>
             <q-item-section>
-              <div class="text-subtitle1">Do Logo impact revenues?</div>
-              <div class="text-caption">
+              <div class="text-h6">Do Logo impact revenues?</div>
+              <div class="text-body2">
                 This research will study how companies logo could have an impact
                 on their revenues or profit.
                 <a href="/research/logorev.html">Read the research</a>
@@ -53,10 +53,10 @@ const openInNewTab = (url) => {
           </q-item>
           <q-item>
             <q-item-section>
-              <div class="text-subtitle1">
+              <div class="text-h6">
                 Do PC gamers prefer playing free games?
               </div>
-              <div class="text-caption">
+              <div class="text-body2">
                 Are better games free to play or a is just a marketing strategy?
                 <a href="/research/pc_gamers.html">Read the research</a>
               </div>
@@ -68,4 +68,9 @@ const openInNewTab = (url) => {
   </q-page>
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+  color: #1F7A8C;
+  text-decoration: none; /* no underline */
+}
+</style>
