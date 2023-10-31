@@ -2,7 +2,7 @@
 
 <template>
   <q-page
-    class="window-height window-width row justify-center items-center q-px-xl"
+    class="row justify-center items-center q-px-xl"
   >
     <div class="col text-center self-center">
       <h4>Hello! I'm Luca</h4>

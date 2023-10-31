@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noreferrer');
+}
+</script>
 
 <template>
   <q-page
@@ -8,13 +12,12 @@
       <h4>Thank you for your time!</h4>
       <div class="col">
         <p>
-          Feel free to contact me at
+          Contact me at
           <a href="mailto:luca.comba98@gmail.com">luca.comba98@gmail.com</a>
         </p>
-        <p class="text-subtitle1">
-          <a href="/documents/LucaCombaResume.pdf">Here</a> you can download my
-          resume
-        </p>
+        <q-btn outline color="secondary" label="Download My Resume" @click="openInNewTab('/documents/LucaCombaResume.pdf')">
+          <q-icon flat dense right name="fa-solid fa-download"/>
+        </q-btn>
       </div>
     </div>
     <q-img

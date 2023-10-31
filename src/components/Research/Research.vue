@@ -1,10 +1,12 @@
-<script setup></script>
+<script setup>
+const openInNewTab = (url) => {
+  window.open(url, '_blank', 'noreferrer')
+}
+</script>
 
 <template>
-  <q-page
-    class="window-height window-width row justify-center items-center q-pa-xl"
-  >
-    <div class="self-center q-pa-xl">
+  <q-page class="row justify-center items-center q-pa-lg">
+    <div class="self-center q-px-lg q-py-md">
       <h2>Research</h2>
       <div class="col">
         <q-list>

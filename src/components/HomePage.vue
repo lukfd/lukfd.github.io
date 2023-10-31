@@ -7,11 +7,7 @@ import Research from './Research/Research.vue'
 </script>
 
 <template>
-  <q-layout
-    view="lHh lpr lFf"
-    container
-    class="window-height window-width shadow-2 rounded-borders"
-  >
+  <q-layout view="hhh lpR fFf">
     <q-header reveal elevated class="q-py-md">
       <q-toolbar>
         <q-toolbar-title><a href="/">Luca Comba</a></q-toolbar-title>
@@ -43,6 +39,7 @@ import Research from './Research/Research.vue'
         </div>
       </q-toolbar>
     </q-header>
+
     <q-page-container>
       <Intro id="Intro" />
       <Experience
