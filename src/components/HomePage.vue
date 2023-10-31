@@ -4,17 +4,6 @@ import Intro from './Intro/Intro.vue'
 import Experience from './Experience/Experience.vue'
 import Projects from './Projects/Projects.vue'
 import Research from './Research/Research.vue'
-
-import { ref } from 'vue'
-import { useElementVisibility } from '@vueuse/core'
-
-const introTarget = ref(null)
-const experienceTarget = ref(null)
-const projectsTarget = ref(null)
-
-const introIsVisible = useElementVisibility(introTarget)
-const experienceIsVisible = useElementVisibility(experienceTarget)
-const projectsIsVisible = useElementVisibility(projectsTarget)
 </script>
 
 <template>
