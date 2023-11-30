@@ -6,9 +6,9 @@
   >
     <div class="col text-center self-center">
       <h4>Hello! I'm Luca</h4>
-      <p>
-        Computer Science and Applied Statistics graduate from the University of
-        St. Thomas. System Specialist at National Information Solutions
+      <p class="text-left">
+        <b>Computer Science</b> and <b>Applied Statistics</b> graduate from the University of
+        St. Thomas. <b>Sr. System Specialist</b> at National Information Solutions
         Cooperative (NISC). I enjoy developing Web and Cloud Applications.
       </p>
     </div>

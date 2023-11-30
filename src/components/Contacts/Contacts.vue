@@ -1,6 +1,6 @@
 <script setup>
 const openInNewTab = (url) => {
-    window.open(url, '_blank', 'noreferrer');
+  window.open(url, '_blank', 'noreferrer')
 }
 </script>
 
@@ -10,13 +10,24 @@ const openInNewTab = (url) => {
   >
     <div class="q-px-lg q-py-md">
       <h4>Thank you for your time!</h4>
+      <p>I also enjoy photography. Here are some of my pictures.</p>
+      <p>
+        <a href="https://www.instagram.com/luca.motionpicture">
+          @luca.motionpicture
+        </a>
+      </p>
       <div class="col">
         <p>
           Contact me at
           <a href="mailto:luca.comba98@gmail.com">luca.comba98@gmail.com</a>
         </p>
-        <q-btn outline color="primary" label="Download My Resume" @click="openInNewTab('/documents/LucaCombaResume.pdf')">
-          <q-icon flat dense right name="fa-solid fa-download"/>
+        <q-btn
+          outline
+          color="primary"
+          label="Download My Resume"
+          @click="openInNewTab('/documents/LucaCombaResume.pdf')"
+        >
+          <q-icon flat dense right name="fa-solid fa-download" />
         </q-btn>
       </div>
     </div>
@@ -60,7 +71,7 @@ const openInNewTab = (url) => {
       style="
         z-index: -2;
         position: absolute;
-        top: 60%;
+        bottom: 2%;
         left: 65%;
         max-width: 23%;
         max-height: 100%;
@@ -79,8 +90,8 @@ const openInNewTab = (url) => {
         position: absolute;
         top: 20%;
         left: 5%;
-        max-width: 30%;
-        max-height: 100%;
+        max-width: 20%;
+        max-height: 90%;
       "
       v-motion
       :initial="{ opacity: 0 }"
@@ -97,7 +108,7 @@ const openInNewTab = (url) => {
 }
 
 a {
-  color: #1F7A8C;
+  color: #1f7a8c;
   text-decoration: none; /* no underline */
 }
 </style>

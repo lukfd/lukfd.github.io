@@ -11,7 +11,7 @@
         class="q-pa-xl"
       >
         <q-timeline-entry
-          title="NISC, System Specialist"
+          title="NISC, Sr. System Specialist"
           subtitle="July 2021 - present"
           side="right"
         >
@@ -23,6 +23,17 @@
             <b>new cloud based applications on AWS using Terraform</b>.
             Automated software builds utilizing Apache Ant, Git and Atlassian's
             Bamboo for continuous delivery pipelines.
+          </div>
+        </q-timeline-entry>
+        <q-timeline-entry
+          title="AWS Cloud Practitioner Certificate"
+          subtitle="May 2023"
+          icon="fa-brands fa-aws"
+          color="accent"
+          side="right"
+        >
+          <div>
+            ID: 8E6TY3TK9E44QV98
           </div>
         </q-timeline-entry>
         <q-timeline-entry
@@ -43,7 +54,7 @@
           side="right"
         >
           <div>
-            Coded <b>RESTful server api</b> using Node.js and
+            n <b>RESTful server api</b> using Node.js and
             <b>deployed two web applications using Amazon AWS EC2</b> that have
             reach hundreds of visitors. Demonstrated strong communication skills
             explaining technical details to St. Thomas professors.

@@ -157,11 +157,16 @@
           <q-item>
             <q-item-section>
               <q-item-label class="text-subtitle1">
-                <a href="https://ferramentacomba.it">Ferramentacomba.it</a>
+                <a href="https://ferramentacomba.com">Ferramentacomba.com</a>
                 <q-badge
                   class="q-pa-sm q-ma-sm"
                   color="secondary"
-                  label="Bootstrap"
+                  label="Vue3"
+                />
+                <q-badge
+                  class="q-pa-sm q-ma-sm"
+                  color="secondary"
+                  label="Tailwind"
                 />
               </q-item-label>
             </q-item-section>

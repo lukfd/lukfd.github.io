@@ -1,11 +1,14 @@
-# Vue 3 + Vite
+# Luca Comba Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Using Vue3 and Vite.
 
-## GitHub Pages with vue
+Website available at [lucacomba.com](https://www.lucacomba.com)
 
-Check out this [https://vitejs.dev/guide/static-deploy.html#github-pages](https://vitejs.dev/guide/static-deploy.html#github-pages)
+## GitHub Pages with vue + squarespace
+
+Check out this [vitejs.dev](https://vitejs.dev/guide/static-deploy.html#github-pages) and [medium.com/using-a-squarespace-domain-with-github-pages-438951d4f5b7](https://emilymdubois.medium.com/using-a-squarespace-domain-with-github-pages-438951d4f5b7)
+
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur)
