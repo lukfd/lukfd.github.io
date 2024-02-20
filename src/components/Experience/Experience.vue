@@ -16,25 +16,24 @@
           side="right"
         >
           <div>
-            Maintained on premise
-            <b>Linux servers, Oracle, Postgres databases</b> used by iVue
-            software owned by hundreds of enterprises. Designed and created
-            <b>Vue front-end applications</b>. Provisioned
-            <b>new cloud based applications on AWS using Terraform</b>.
-            Automated software builds utilizing Apache Ant, Git and Atlassian's
-            Bamboo for continuous delivery pipelines.
+            Implemented cloud native applications on <b>Amazon AWS</b> using
+            <b>Terraform</b> deployments, enhancing operational efficiency.
+            Designed and implemented <b>Vue</b> front-end and a
+            <b>FastAPI</b> and <b>Node.js</b> back-end, delivering robust web
+            applications. Developed <b>Python</b> and <b>Bash</b>
+            scripts to automate system management tasks, improving system
+            reliability. Managed on-premise Linux servers and Oracle, Postgres
+            databases for the iVUE software, supporting critical operations for
+            hundreds of enterprises.
           </div>
         </q-timeline-entry>
         <q-timeline-entry
           title="AWS Cloud Practitioner Certificate"
           subtitle="May 2023"
           icon="fa-brands fa-aws"
-          color="accent"
           side="right"
         >
-          <div>
-            ID: 8E6TY3TK9E44QV98
-          </div>
+          <div>ID: 8E6TY3TK9E44QV98</div>
         </q-timeline-entry>
         <q-timeline-entry
           title="Bachelor Of Science in Computer Science and Applied Statistcs"
@@ -54,10 +53,11 @@
           side="right"
         >
           <div>
-            n <b>RESTful server api</b> using Node.js and
-            <b>deployed two web applications using Amazon AWS EC2</b> that have
-            reach hundreds of visitors. Demonstrated strong communication skills
-            explaining technical details to St. Thomas professors.
+            Developed a <b>RESTful API</b> using JavaScript. Successfully
+            deployed an interactive map web application and a static website on
+            Amazon AWS, attracting hundreds of visitors. Exhibited
+            <b>strong communication skills</b> by effectively conveying
+            technical concepts to professors at the University of St. Thomas.
           </div>
         </q-timeline-entry>
         <q-timeline-entry
@@ -66,9 +66,9 @@
           side="right"
         >
           <div>
-            Collaborated in a team for developing front and back end of a web
-            application used by hundreds of student for code testing and code
-            grading using Vue.js, Express and SQLite.
+            Collaborated with a team to develop both the front-end and back-end
+            of a <b>web-based platform</b>, utilized by hundreds of students for code
+            testing and automated grading.
           </div>
         </q-timeline-entry>
       </q-timeline>
