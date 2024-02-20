@@ -38,7 +38,6 @@
         <q-timeline-entry
           title="Bachelor Of Science in Computer Science and Applied Statistcs"
           subtitle="May 2021"
-          color="accent"
           icon="fa-solid fa-graduation-cap"
           side="right"
         >
