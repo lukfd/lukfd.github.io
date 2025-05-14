@@ -1,185 +1,171 @@
 <script setup></script>
 
 <template>
-  <q-page
-    class="row justify-center items-center q-pa-lg"
-  >
-    <div class="self-center q-px-lg q-py-md">
-      <h2>Projects</h2>
-      <div class="col">
-        <q-list>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="https://skaffale.com">Skaffale.com</a> - website for
-                the AI and ML community
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="primary"
-                  label="Docker"
-                />
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="primary"
-                  label="Kubernetes"
-                />
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Node.js"
-                />
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Vue3"
-                />
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="accent"
-                  label="Postgres"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="https://trinkapp.it">Trinkapp.it</a> - React Native
-                mobile video game
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="primary"
-                  label="Docker"
-                />
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="React Native"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="https://github.com/smantic-labs/website"
-                  >Web interface</a
-                >
-                for Minecraft Ethereum smart contracts
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="React"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="https://github.com/lukfd/farmerselevator"
-                  >Web Application</a
-                >
-                for farmers and elevators
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Flask"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="https://submit.cs.stthomas.edu/">
-                  Computer Science Department's Autograder
-                </a>
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Node.js"
-                />
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Vue.js"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="http://croatia.stelarprojects.net/">
-                  University of St. Thomas Multidepartment Showcase
-                </a>
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Bootstrap"
-                />
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="jQuery"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="http://mnmnmaps.stelarprojects.net/">
-                  Minnesota Multifatih Network's interactive map
-                </a>
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Vue.js"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="https://github.com/lukfd/enpy">Enpy</a> - Python
-                library converting json to csv dataset
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Python"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-subtitle1">
-                <a href="https://ferramentacomba.com">Ferramentacomba.com</a>
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Vue3"
-                />
-                <q-badge
-                  class="q-pa-sm q-ma-sm"
-                  color="secondary"
-                  label="Tailwind"
-                />
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-        </q-list>
+      <div class="column items-center q-pa-lg">
+        <h2>Projects</h2>
+
+        <div class="q-pt-md">
+          <q-list>
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="https://skaffale.com"
+                    label="Skaffale.com"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  - website for the AI and ML community
+                  <q-badge class="q-pa-sm q-ma-sm" color="primary" label="Docker" />
+                  <q-badge class="q-pa-sm q-ma-sm" color="primary" label="Kubernetes" />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Node.js" />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Vue3" />
+                  <q-badge class="q-pa-sm q-ma-sm" color="accent" label="Postgres" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="https://trinkapp.it"
+                    label="Trinkapp.it"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  - React Native mobile video game
+                  <q-badge class="q-pa-sm q-ma-sm" color="primary" label="Docker" />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="React Native" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="https://github.com/smantic-labs/website"
+                    label="Web interface"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  for Minecraft Ethereum smart contracts
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="React" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="https://github.com/lukfd/farmerselevator"
+                    label="Web Application"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  for farmers and elevators
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Flask" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="https://submit.cs.stthomas.edu/"
+                    label="Computer Science Department's Autograder"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Node.js" />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Vue.js" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="http://croatia.stelarprojects.net/"
+                    label="University of St. Thomas Multidepartment Showcase"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Bootstrap" />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="jQuery" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="http://mnmnmaps.stelarprojects.net/"
+                    label="Minnesota Multifatih Network's interactive map"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Vue.js" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="https://github.com/lukfd/enpy"
+                    label="Enpy"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  - Python library converting json to csv dataset
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Python" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item>
+              <q-item-section>
+                <q-item-label class="text-subtitle1">
+                  <q-btn
+                    href="https://ferramentacomba.com"
+                    label="Ferramentacomba.com"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Vue3" />
+                  <q-badge class="q-pa-sm q-ma-sm" color="secondary" label="Tailwind" />
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </div>
       </div>
-    </div>
-  </q-page>
 </template>
 
 <style scoped>
-a {
-  color: #1F7A8C;
-  text-decoration: none; /* no underline */
+.q-btn {
+  padding: 0;
+  min-height: unset;
+  line-height: inherit;
+}
+
+.q-list {
+  width: 100%;
 }
 </style>
