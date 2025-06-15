@@ -10,7 +10,10 @@
             subtitle="May 2024 - Present"
             side="right"
           >
-            <div>Pursuing a Master Degree in Artificial Intelligence at the University of St. Thomas.</div>
+            <div>
+              Pursuing a Master Degree in Artificial Intelligence at the
+              University of St. Thomas.
+            </div>
           </q-timeline-entry>
           <q-timeline-entry
             title="NISC, Sr. System Specialist"
@@ -18,15 +21,14 @@
             side="right"
           >
             <div>
-              Implemented cloud native applications on <b>Amazon AWS</b> using
-              <b>Terraform</b> deployments, enhancing operational efficiency.
-              Designed and implemented <b>Vue</b> front-end and a <b>FastAPI</b> and
-              <b>Node.js</b> back-end, delivering robust web applications. Developed
-              <b>Python</b> and <b>Bash</b>
-              scripts to automate system management tasks, improving system
-              reliability. Managed on-premise Linux servers and Oracle, Postgres
-              databases for the iVUE software, supporting critical operations for
-              hundreds of enterprises.
+              Led the design and implementation of critical <b>cloud services</b>,
+              enhancing infrastructure management, data security, and
+              operational efficiency for millions of end-users across utility
+              and broadband sectors. Developed and maintained robust deployment
+              pipelines, including managing Xymon updates, automating
+              configuration data collection to AWS S3, and building AWS
+              infrastructure with Terraform, ensuring secure and streamlined
+              application delivery.
             </div>
           </q-timeline-entry>
           <q-timeline-entry
@@ -44,8 +46,8 @@
             side="right"
           >
             <div>
-              Graduated from the University of St. Thomas, St. Paul, Minnesota. GPA
-              3.65.
+              Graduated from the University of St. Thomas, St. Paul, Minnesota.
+              GPA 3.65.
             </div>
           </q-timeline-entry>
           <q-timeline-entry
@@ -54,11 +56,11 @@
             side="right"
           >
             <div>
-              Developed a <b>RESTful API</b> using JavaScript. Successfully deployed
-              an interactive map web application and a static website on Amazon AWS,
-              attracting hundreds of visitors. Exhibited
-              <b>strong communication skills</b> by effectively conveying technical
-              concepts to professors at the University of St. Thomas.
+              Developed a <b>RESTful API</b> using JavaScript. Successfully
+              deployed an interactive map web application and a static website
+              on Amazon AWS, attracting hundreds of visitors. Exhibited
+              <b>strong communication skills</b> by effectively conveying
+              technical concepts to professors at the University of St. Thomas.
             </div>
           </q-timeline-entry>
           <q-timeline-entry
@@ -67,9 +69,9 @@
             side="right"
           >
             <div>
-              Collaborated with a team to develop both the front-end and back-end of
-              a <b>web-based platform</b>, utilized by hundreds of students for code
-              testing and automated grading.
+              Collaborated with a team to develop both the front-end and
+              back-end of a <b>web-based platform</b>, utilized by hundreds of
+              students for code testing and automated grading.
             </div>
           </q-timeline-entry>
         </q-timeline>
