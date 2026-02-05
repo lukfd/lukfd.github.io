@@ -41,7 +41,7 @@
 
             <div class="col-12 col-md-4 text-center">
                 <q-img
-                    src="/photos/me4.jpg"
+                    src="/photos/me7.jpg"
                     class="profile-image"
                 />
             </div>

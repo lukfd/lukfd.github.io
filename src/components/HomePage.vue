@@ -19,17 +19,13 @@
             label="Projects"
             @click="scrollTo('Projects')"
           />
+          <q-btn
+            href="https://www.blog.lucacomba.com/"
+            target="_blank"
+            label="Blog"
+            icon="fa-solid fa-pen"
+          />
         </q-breadcrumbs>
-        <q-btn
-          href="https://www.blog.lucacomba.com/"
-          target="_blank"
-          flat
-          round
-          dense
-          icon="fa-solid fa-pen"
-        >
-          <q-tooltip class="">My Blog</q-tooltip>
-        </q-btn>
         <q-btn
           href="https://www.linkedin.com/in/luca-comba-29000764/"
           flat
