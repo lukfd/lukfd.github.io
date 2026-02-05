@@ -20,6 +20,7 @@
             @click="scrollTo('Projects')"
           />
           <q-btn
+            flat
             href="https://www.blog.lucacomba.com/"
             target="_blank"
             label="Blog"
