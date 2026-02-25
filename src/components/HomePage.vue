@@ -62,6 +62,7 @@
       <q-page>
         <Intro id="Intro" />
         <Experience id="Experience" />
+        <Skills id="Skills" />
         <Projects id="Projects" />
         <Research id="Research" />
         <Contacts id="Contacts" />
@@ -75,6 +76,7 @@
 import { config } from '@/config.js'
 import Contacts from './Contacts/Contacts.vue'
 import Intro from './Intro/Intro.vue'
+import Skills from './Skills/Skills.vue'
 import Experience from './Experience/Experience.vue'
 import Projects from './Projects/Projects.vue'
 import Research from './Research/Research.vue'
