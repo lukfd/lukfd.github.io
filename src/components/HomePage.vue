@@ -21,35 +21,35 @@
           />
           <q-btn
             flat
-            href="https://www.blog.lucacomba.com/"
+            :href="config.blogUrl"
             target="_blank"
             label="Blog"
             icon="fa-solid fa-pen"
           />
         </q-breadcrumbs>
         <q-btn
-          href="https://www.linkedin.com/in/luca-comba-29000764/"
+          :href="config.linkedInUrl"
           flat
           round
           dense
           icon="fa-brands fa-linkedin"
         />
         <q-btn
-          href="https://github.com/lukfd/"
+          :href="config.githubUrl"
           flat
           round
           dense
           icon="fa-brands fa-github"
         />
         <q-btn
-          href="https://www.youtube.com/channel/UCzITfhQ11v_73eBJTJY41pA"
+          :href="config.youtubeUrl"
           flat
           round
           dense
           icon="fa-brands fa-youtube"
         />
         <q-btn
-          href="mailto:luca.comba98@gmail.com"
+          :href="'mailto:' + config.email"
           flat
           round
           dense
@@ -72,6 +72,7 @@
 </template>
 
 <script setup>
+import { config } from '@/config.js'
 import Contacts from './Contacts/Contacts.vue'
 import Intro from './Intro/Intro.vue'
 import Experience from './Experience/Experience.vue'

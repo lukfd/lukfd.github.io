@@ -8,6 +8,24 @@
           <q-item>
             <q-item-section>
               <q-item-label class="text-subtitle1">
+                <div class="text-h6">Predict Restaurant Ratings</div>
+                <div class="text-body2">
+                  Utilizing the Yelp Open Dataset with over <b>6 million reviews</b> and <b>200,100 images</b> from 150,000 businesses to predict restaurant ratings. Leveraging <b>CLIP (Contrastive Language–Image Pre-training)</b>, a neural network trained on image-text pairs, for zero-shot classification combining user reviews, photos, and business attributes.
+                  <q-btn
+                    href="https://github.com/lukfd/restaurant-discovery-models"
+                    label="github.com/lukfd/restaurant-discovery-models"
+                    flat
+                    color="primary"
+                    target="_blank"
+                  />
+                </div>
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+
+          <q-item>
+            <q-item-section>
+              <q-item-label class="text-subtitle1">
                 <div class="text-h6">Streamflow Recession of the Red River</div>
                 <div class="text-body2">
                   Impacts of seasonally frozen ground on streamflow recession in

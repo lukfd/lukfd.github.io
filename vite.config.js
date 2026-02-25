@@ -19,5 +19,10 @@ export default defineConfig({
         new URL('./src/quasar-variables.sass', import.meta.url)
       )
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
 })

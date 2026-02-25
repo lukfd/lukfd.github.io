@@ -5,19 +5,19 @@
             
             <div class="q-gutter-sm">
                 <q-btn
-                    href="mailto:luca.comba98@gmail.com"
-                    label="luca.comba98@gmail.com"
+                    :href="'mailto:' + config.email"
+                    :label="config.email"
                     flat 
                     icon="email"
                 />
                 <q-btn
-                    href="https://www.linkedin.com/in/luca-comba-29000764/"
+                    :href="config.linkedInUrl"
                     label="linkedin.com/in/luca.comba"
                     icon="fa-brands fa-linkedin"
                     flat
                 />
                 <q-btn
-                    href="https://github.com/lukfd/"
+                    :href="config.githubUrl"
                     label="github.com/lukfd"
                     icon="fa-brands fa-github"
                     flat
@@ -26,7 +26,7 @@
 
             <div class="q-pt-xl">
                 <q-btn
-                    href="/documents/LucaCombaResume.pdf"
+                    :href="config.resumeUrl"
                     target="_blank"
                     outline
                     color="primary"
@@ -53,7 +53,7 @@
                 
             <div class="q-pt-xl text-center">
                 <q-btn
-                    href="https://www.instagram.com/luca.motionpicture"
+                    :href="config.instagramUrl"
                     label="@luca.motionpicture"
                     icon="fa-brands fa-instagram"
                     flat
@@ -63,7 +63,9 @@
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { config } from '@/config.js'
+</script>
 
 <style scoped>
 .q-img {

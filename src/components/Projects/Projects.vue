@@ -9,8 +9,34 @@
             <q-item-section>
               <q-item-label class="text-subtitle1">
                 <q-btn
+                  href="https://routes-for-good.lovable.app"
+                  label="Routes for Good"
+                  flat
+                  color="primary"
+                  target="_blank"
+                />
+                distributing food among students in need
+                <q-badge
+                  class="q-pa-sm q-ma-sm"
+                  color="secondary"
+                  label="React"
+                />
+                <q-badge
+                  class="q-pa-sm q-ma-sm"
+                  color="primary"
+                  label="Lovable"
+                />
+                <small>Winner of the <a href="https://tommie-buildfest.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Recently+ended" target="_blank">Tommie Build Fest</a> hackathon</small>
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+
+          <q-item>
+            <q-item-section>
+              <q-item-label class="text-subtitle1">
+                <q-btn
                   href="https://www.tommies.peeperone.com"
-                  label="Tommie Board"
+                  label="Tommie Idea Board"
                   flat
                   color="primary"
                   target="_blank"

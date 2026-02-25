@@ -16,19 +16,22 @@
             </div>
           </q-timeline-entry>
           <q-timeline-entry
-            title="NISC, Sr. System Specialist"
+            title="NISC, Sr. Systems Specialist"
             subtitle="July 2021 - Present"
             side="right"
           >
             <div>
-              Led the design and implementation of critical <b>cloud services</b>,
-              enhancing infrastructure management, data security, and
-              operational efficiency for millions of end-users across utility
-              and broadband sectors. Developed and maintained robust deployment
-              pipelines, including managing Xymon updates, automating
-              configuration data collection to AWS S3, and building AWS
-              infrastructure with Terraform, ensuring secure and streamlined
-              application delivery.
+              <ul>
+                <li>
+                  Architected and deployed scalable backend services using <b>FastAPI</b> and <b>Airflow</b>, leveraging <b>Boto3</b> to automate <b>AWS</b> infrastructure provisioning for cooperatives supporting over <b>1M national users</b>.
+                </li>
+                <li>
+                  Developed a custom <b>Cobra CLI</b> and <b>Vue</b> interface to streamline maintenance and patching for <i>hybrid (on-prem/cloud) environments</i> via <b>AWS Systems Manager</b>, significantly reducing manual intervention.
+                </li>
+                <li>
+                  Standardized <b>Infrastructure-as-Code (IaC)</b> utilizing <b>Terraform</b> and <b>Bamboo</b>; integrated <b>UV</b> and <b>Goreleaser</b> into <b>CI/CD</b> pipelines to automate releases, reclaiming <b>80+ engineering hours annually</b>.
+                </li>
+              </ul>
             </div>
           </q-timeline-entry>
           <q-timeline-entry

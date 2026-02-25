@@ -1,28 +1,28 @@
+<script setup>
+import { config } from '@/config.js'
+</script>
+
 <template>
     <div class="q-pa-lg">
         <div class="row items-center justify-center q-col-gutter-xl">
             <div class="col-12 col-md-6 text-center">
-                <h2>Hello! I'm Luca</h2>
+                <h2>Hello! I'm Luca Comba</h2>
                 
                 <div class="text-body1 q-pt-md">
                     <p>
-                        <b>Computer Science</b> and <b>Applied Statistics</b> graduate from the
+                        <b>Computer Science</b>, <b>Applied Statistics</b> and <b>Artificial Intelligence</b> graduate from the
                         <i>University of St. Thomas</i>.
                     </p>
                     <p>
-                        <b>Sr. System Specialist</b> at
+                        <b>Sr. Systems Specialist</b> at
                         <i>National Information Solutions Cooperative</i> (NISC). I enjoy
                         developing Web and Cloud Applications.
-                    </p>
-                    <p>
-                        I am currently pursuing a Master degree in Artificial Intelligence at
-                        the <i>University of St. Thomas</i>.
                     </p>
                 </div>
 
                 <div class="q-pt-xl">
                     <q-btn
-                        href="/documents/LucaCombaResume.pdf"
+                        :href="config.resumeUrl"
                         target="_blank"
                         outline
                         color="primary"
@@ -30,7 +30,7 @@
                         class="q-mr-sm"
                     />
                     <q-btn
-                        href="https://www.blog.lucacomba.com/"
+                        :href="config.blogUrl"
                         target="_blank"
                         flat
                         color="primary"
