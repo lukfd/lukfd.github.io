@@ -6,13 +6,14 @@
       <div class="q-pt-md" style="max-width: 800px">
         <q-timeline layout="comfortable" side="right" color="secondary">
           <q-timeline-entry
-            title="Master Graduate Program in Artificial Intelligence"
-            subtitle="May 2024 - Present"
+            title="Master of Science in Artificial Intelligence"
+            subtitle="May 2024 - May 2026"
+            icon="fa-solid fa-graduation-cap"
             side="right"
           >
             <div>
-              Pursuing a Master Degree in Artificial Intelligence at the
-              University of St. Thomas.
+              Graduated with a Master of Science Degree in Artificial Intelligence at the
+              University of St. Thomas (MN).
             </div>
           </q-timeline-entry>
           <q-timeline-entry

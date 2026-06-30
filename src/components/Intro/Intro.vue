@@ -11,7 +11,7 @@ import { config } from '@/config.js'
                 <div class="text-body1 q-pt-md">
                     <p>
                         <b>Computer Science</b>, <b>Applied Statistics</b> and <b>Artificial Intelligence</b> graduate from the
-                        <i>University of St. Thomas</i>.
+                        <i>University of St. Thomas (MN)</i>.
                     </p>
                     <p>
                         <b>Sr. Systems Specialist</b> at

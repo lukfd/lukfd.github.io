@@ -9,6 +9,36 @@
             <q-item-section>
               <q-item-label class="text-subtitle1">
                 <q-btn
+                  href="https://www.campllm.techypond.com"
+                  label="CampLLM"
+                  flat
+                  color="primary"
+                  target="_blank"
+                />
+                a new Minnesota State Park finder using RAG
+                <q-badge
+                  class="q-pa-sm q-ma-sm"
+                  color="primary"
+                  label="Chroma Vector DB"
+                />
+                <q-badge
+                  class="q-pa-sm q-ma-sm"
+                  color="blue"
+                  label="AI"
+                />
+                <q-badge
+                  class="q-pa-sm q-ma-sm"
+                  color="secondary"
+                  label="PostGIS"
+                />
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+
+          <q-item>
+            <q-item-section>
+              <q-item-label class="text-subtitle1">
+                <q-btn
                   href="https://routes-for-good.lovable.app"
                   label="Routes for Good"
                   flat
@@ -35,7 +65,7 @@
             <q-item-section>
               <q-item-label class="text-subtitle1">
                 <q-btn
-                  href="https://www.tommies.peeperone.com"
+                  href="https://www.tommies.techypond.com"
                   label="Tommie Idea Board"
                   flat
                   color="primary"
@@ -105,7 +135,7 @@
             <q-item-section>
               <q-item-label class="text-subtitle1">
                 <q-btn
-                  href="https://wwww.trinkapp.peeperone.com"
+                  href="https://wwww.trinkapp.techypond.com"
                   label="Trinkapp"
                   flat
                   color="primary"
