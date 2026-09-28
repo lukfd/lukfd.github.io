@@ -13,10 +13,12 @@ import '@quasar/extras/fontawesome-v6/fontawesome-v6.css'
 import 'quasar/src/css/index.sass'
 
 import 'animate.css'
+import './styles/markdown.css'
 
 // Assumes your root component is App.vue
 // and placed in same folder as main.js
 import App from './App.vue'
+import router from './router'
 
 const myApp = createApp(App)
 
@@ -26,6 +28,7 @@ myApp.use(Quasar, {
 })
 
 myApp.use(MotionPlugin)
+myApp.use(router)
 
 // Assumes you have a <div id="app"></div> in your index.html
 myApp.mount('#app')

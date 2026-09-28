@@ -6,7 +6,7 @@ import { config } from '@/config.js'
     <div class="q-pa-lg">
         <div class="row items-center justify-center q-col-gutter-xl">
             <div class="col-12 col-md-6 text-center">
-                <h2>Hello! I'm Luca Comba</h2>
+                <h2>I'm Luca Comba</h2>
                 
                 <div class="text-body1 q-pt-md">
                     <p>
@@ -15,8 +15,10 @@ import { config } from '@/config.js'
                     </p>
                     <p>
                         <b>Sr. Systems Specialist</b> at
-                        <i>National Information Solutions Cooperative</i> (NISC). I enjoy
-                        developing Web and Cloud Applications.
+                        <i>National Information Solutions Cooperative</i> (NISC).
+                    </p>
+                    <p>
+                        I enjoy develoing web and cloud applications.
                     </p>
                 </div>
 
@@ -30,8 +32,7 @@ import { config } from '@/config.js'
                         class="q-mr-sm"
                     />
                     <q-btn
-                        :href="config.blogUrl"
-                        target="_blank"
+                        to="/blog"
                         flat
                         color="primary"
                         label="Blog"
