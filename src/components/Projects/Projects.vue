@@ -53,7 +53,7 @@
 const projects = [
   {
     title: "HomeLenz",
-    href: "https://www.homelenz.techypond.com",
+    href: "https://homelenz.techypond.com",
     description: "Search and data tool for the real estate market.",
     badges: [
       { label: "Nuxt", color: "primary" },
@@ -63,7 +63,7 @@ const projects = [
   },
   {
     title: "CampLLM",
-    href: "https://www.campllm.techypond.com",
+    href: "https://campllm.techypond.com",
     description: "Minnesota State Park finder using Retrieval-Augmented Generation (RAG).",
     badges: [
       { label: "Chroma Vector DB", color: "primary" },
@@ -83,7 +83,7 @@ const projects = [
   },
   {
     title: "Tommie Idea Board",
-    href: "https://www.tommies.techypond.com",
+    href: "https://tommies.techypond.com",
     description: "Platform for university students to share, validate, and collaborate on startup ideas.",
     badges: [
       { label: "Docker", color: "primary" },
@@ -105,7 +105,7 @@ const projects = [
   },
   {
     title: "Trinkapp",
-    href: "https://wwww.trinkapp.techypond.com",
+    href: "https://trinkapp.techypond.com",
     description: "Cross-platform mobile gaming application developed with React Native.",
     badges: [
       { label: "Docker", color: "primary" },
@@ -167,9 +167,9 @@ const projects = [
     ]
   },
   {
-    title: "Ferramentacomba.com",
-    href: "https://ferramentacomba.com",
-    description: "Commercial product catalog and web presence for a retail hardware business.",
+    title: "ferramentacomba.com",
+    href: "https://github.com/lukfd/ferramentacomba",
+    description: "Website for my father's local hardware store.",
     badges: [
       { label: "Vue 3", color: "secondary" },
       { label: "Tailwind", color: "secondary" }

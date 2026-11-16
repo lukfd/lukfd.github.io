@@ -19,5 +19,5 @@ Personally, I've often experienced the challenge of finding co-founders for star
 You can find the code repository and a demo of the web page at the following links:
 
 - Code Repository: [https://github.com/lukfd/tommies-idea](https://github.com/lukfd/tommies-idea)
-- Demo Web Page: [https://www.tommies.techypond.com/](https://www.tommies.techypond.com/)
+- Demo Web Page: [https://tommies.techypond.com/](https://tommies.techypond.com/)
 

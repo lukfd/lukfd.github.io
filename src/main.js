@@ -14,6 +14,7 @@ import 'quasar/src/css/index.sass'
 
 import 'animate.css'
 import './styles/markdown.css'
+import './style.css'
 
 // Assumes your root component is App.vue
 // and placed in same folder as main.js
